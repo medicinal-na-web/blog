@@ -1,0 +1,265 @@
+import Link from "next/link";
+import Image from "next/image";
+import { getSiteSettings } from "@/lib/queries";
+import { cms } from "@/lib/cms";
+import { CategoryMenu } from "./CategoryMenu";
+import { MobileMenu } from "./MobileMenu";
+import { SearchBar } from "./SearchBar";
+
+function IconCart({ size = 16 }: { size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <circle cx="8" cy="21" r="1" />
+      <circle cx="19" cy="21" r="1" />
+      <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" />
+    </svg>
+  );
+}
+
+function IconWhatsApp({ size = 16 }: { size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.552 4.103 1.516 5.83L.057 23.117a.75.75 0 0 0 .92.92l5.356-1.447A11.942 11.942 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.718 9.718 0 0 1-4.964-1.36l-.356-.212-3.69.997.983-3.598-.232-.37A9.718 9.718 0 0 1 2.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z" />
+    </svg>
+  );
+}
+
+function IconFacebook({ size = 20 }: { size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+    </svg>
+  );
+}
+
+function IconInstagram({ size = 20 }: { size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+      <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+    </svg>
+  );
+}
+
+function IconYoutube({ size = 20 }: { size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z" />
+      <polygon fill="white" points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" />
+    </svg>
+  );
+}
+
+function ensureAbsoluteUrl(url: string): string {
+  if (/^https?:\/\//i.test(url)) return url;
+  return `https://${url}`;
+}
+
+type NavLink = {
+  label: string;
+  url: string;
+  highlight?: boolean;
+  collection?: string;
+};
+
+type HeaderProps = {
+  showSearch?: boolean;
+  showSocial?: boolean;
+  showWhatsApp?: boolean;
+  showCategories?: boolean;
+  showCta?: boolean;
+  ctaLabel?: string;
+  ctaUrl?: string;
+  whatsappText?: string;
+  whatsappMessage?: string;
+  sticky?: boolean;
+  backgroundColor?: string;
+  logoWidth?: number;
+  logoHeight?: number;
+  navLinks?: NavLink[];
+};
+
+export async function Header({
+  showSearch = true,
+  showSocial = true,
+  showWhatsApp = true,
+  showCategories = true,
+  showCta = true,
+  ctaLabel = "Loja Virtual",
+  ctaUrl = "https://loja.medicinalnaweb.com.br",
+  whatsappText = "Fale Conosco",
+  whatsappMessage,
+  sticky = true,
+  backgroundColor,
+  logoWidth = 160,
+  logoHeight = 32,
+  navLinks: navLinksProp,
+}: HeaderProps = {}) {
+  // Fetch settings + global sections header config from CMS
+  const [settings, globalSections] = await Promise.all([
+    getSiteSettings(),
+    cms.globalSections.get(),
+  ]);
+
+  // navLinks: props override > CMS global sections > defaults
+  const DEFAULT_NAV_LINKS: NavLink[] = [
+    { label: "Maca Peruana", url: "/campanhas/maca-peruana" },
+    { label: "Morosil", url: "/campanhas/morosil" },
+  ];
+
+  const navLinks: NavLink[] =
+    navLinksProp ??
+    (globalSections?.header?.props?.navLinks as NavLink[] | undefined) ??
+    DEFAULT_NAV_LINKS;
+
+  // Resolve navLinks: static links render as-is, collection links auto-populate
+  const collectionSlugs = [
+    ...new Set(navLinks.filter((l) => l.collection).map((l) => l.collection!)),
+  ];
+
+  const collectionResults = await Promise.all(
+    collectionSlugs.map((slug) => cms.collections.list(slug, { limit: 50 })),
+  );
+
+  const collectionData = new Map<string, { label: string; url: string }[]>();
+  collectionSlugs.forEach((slug, i) => {
+    const items = collectionResults[i]?.docs ?? [];
+    collectionData.set(
+      slug,
+      items
+        .filter((item) => item.status === "published")
+        .map((item) => ({
+          label: (item.data?.title as string) || (item.data?.name as string) || item.slug,
+          url: `/${slug}/${item.slug}`,
+        })),
+    );
+  });
+
+  // Build resolved nav links
+  type ResolvedLink = { label: string; url: string; highlight?: boolean };
+  const resolvedNavLinks: ResolvedLink[] = [];
+  for (const link of navLinks ?? []) {
+    if (link.collection) {
+      const items = collectionData.get(link.collection) ?? [];
+      resolvedNavLinks.push(...items.map((item) => ({ ...item, highlight: link.highlight })));
+    } else if (link.label && link.url) {
+      resolvedNavLinks.push({ label: link.label, url: link.url, highlight: link.highlight });
+    }
+  }
+
+  const s = settings as any;
+  const logoUrl = s?.logo?.url ?? "/logo.svg";
+  const siteName = s?.siteName ?? "Medicinal na Web";
+  const whatsappNumber = s?.whatsapp || "5531999999999";
+  const socials = {
+    facebook: s?.facebook ? ensureAbsoluteUrl(s.facebook) : null,
+    instagram: s?.instagram ? ensureAbsoluteUrl(s.instagram) : null,
+    youtube: s?.youtube ? ensureAbsoluteUrl(s.youtube) : null,
+  };
+
+  return (
+    <header
+      className={`${sticky ? "sticky top-0" : ""} z-50`}
+      style={{ backgroundColor: backgroundColor || "#ffffff" }}
+    >
+      {/* Linha 1: Logo + Busca + Sociais */}
+      <div className="border-b">
+        <div className="mx-auto flex h-16 max-w-7xl items-center gap-6 px-4">
+          {/* Logo */}
+          <Link href="/" className="flex shrink-0 items-center" aria-label={`${siteName} — Ir para a página inicial`}>
+            <Image src={logoUrl} alt={siteName} width={logoWidth} height={logoHeight} loading="eager" />
+          </Link>
+
+          {/* Busca global — oculta em mobile */}
+          {showSearch && (
+            <div className="hidden min-w-0 flex-1 md:flex">
+              <SearchBar />
+            </div>
+          )}
+
+          {/* Botoes de acao — ocultos em mobile */}
+          <div className="hidden items-center gap-2 md:flex">
+            {showCta && (
+              <a
+                href={ctaUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1.5 rounded-md border border-[#0d61ac] px-3 py-1.5 text-sm font-medium text-[#0d61ac] transition-colors hover:bg-[#0d61ac]/5"
+              >
+                <IconCart size={14} />
+                {ctaLabel}
+              </a>
+            )}
+            {showWhatsApp && (
+              <a
+                href={`https://wa.me/${whatsappNumber}${whatsappMessage ? `?text=${encodeURIComponent(whatsappMessage)}` : ""}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1.5 rounded-md bg-[#0d61ac] px-3 py-1.5 text-sm font-medium text-white transition-colors hover:bg-[#0a4f90]"
+              >
+                <IconWhatsApp size={14} />
+                {whatsappText}
+              </a>
+            )}
+          </div>
+
+          {/* Sociais — ocultos em mobile e tablet */}
+          {showSocial && <div className="hidden items-center gap-1 lg:flex">
+            {socials.facebook && (
+              <a
+                href={socials.facebook}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+                className="flex items-center justify-center rounded-md p-2 text-muted-foreground transition-colors hover:bg-primary/5 hover:text-primary"
+              >
+                <IconFacebook size={20} />
+              </a>
+            )}
+            {socials.instagram && (
+              <a
+                href={socials.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                className="flex items-center justify-center rounded-md p-2 text-muted-foreground transition-colors hover:bg-primary/5 hover:text-primary"
+              >
+                <IconInstagram size={20} />
+              </a>
+            )}
+            {socials.youtube && (
+              <a
+                href={socials.youtube}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="YouTube"
+                className="flex items-center justify-center rounded-md p-2 text-muted-foreground transition-colors hover:bg-primary/5 hover:text-primary"
+              >
+                <IconYoutube size={20} />
+              </a>
+            )}
+          </div>}
+
+          {/* Hamburger — visivel so em mobile */}
+          <div className="ml-auto md:hidden">
+            <MobileMenu
+              navLinks={resolvedNavLinks}
+              socials={socials}
+            />
+          </div>
+        </div>
+      </div>
+
+      {/* Linha 2: Menu de navegacao — oculto em mobile */}
+      {showCategories && resolvedNavLinks.length > 0 && (
+        <div className="hidden border-b md:block">
+          <div className="mx-auto max-w-7xl px-4">
+            <CategoryMenu navLinks={resolvedNavLinks} />
+          </div>
+        </div>
+      )}
+    </header>
+  );
+}

@@ -1,0 +1,2555 @@
+{
+  "generatedAt": "2026-07-24T20:17:31.871Z",
+  "sections": [
+    {
+      "key": "Accordion",
+      "title": "Accordion",
+      "path": "sections/Accordion",
+      "props": {
+        "title": {
+          "type": "string",
+          "format": "text",
+          "title": "Titulo",
+          "required": false
+        },
+        "items": {
+          "type": "array",
+          "title": "Itens",
+          "required": true,
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string",
+                "format": "text",
+                "title": "Titulo",
+                "required": true
+              },
+              "content": {
+                "type": "string",
+                "format": "rich-text",
+                "title": "Conteudo",
+                "required": true
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "key": "Alert",
+      "title": "Alert",
+      "path": "sections/Alert",
+      "props": {
+        "text": {
+          "type": "string",
+          "format": "text",
+          "title": "Texto",
+          "required": true
+        },
+        "type": {
+          "type": "string",
+          "format": "select",
+          "title": "Tipo",
+          "required": false,
+          "default": "info",
+          "options": [
+            "info",
+            "success",
+            "warning",
+            "error"
+          ]
+        },
+        "dismissible": {
+          "type": "boolean",
+          "title": "Dispensavel",
+          "required": false,
+          "default": false
+        },
+        "icon": {
+          "type": "boolean",
+          "title": "Exibir icone",
+          "required": false,
+          "default": true
+        }
+      }
+    },
+    {
+      "key": "Banner",
+      "title": "Banner",
+      "description": "Banner promocional com imagem e texto",
+      "group": "Marketing",
+      "path": "sections/Banner",
+      "props": {
+        "image": {
+          "type": "string",
+          "format": "image",
+          "title": "Imagem",
+          "required": true
+        },
+        "alt": {
+          "type": "string",
+          "format": "text",
+          "title": "Alt da imagem",
+          "required": true
+        },
+        "title": {
+          "type": "string",
+          "format": "text",
+          "title": "Titulo",
+          "required": false
+        },
+        "description": {
+          "type": "string",
+          "format": "textarea",
+          "title": "Descricao",
+          "required": false
+        },
+        "backgroundColor": {
+          "type": "string",
+          "format": "color",
+          "title": "Cor de fundo",
+          "required": false
+        },
+        "height": {
+          "type": "string",
+          "format": "select",
+          "title": "Altura",
+          "required": false,
+          "default": "medio",
+          "options": [
+            "pequeno",
+            "medio",
+            "grande"
+          ]
+        },
+        "href": {
+          "type": "string",
+          "format": "text",
+          "title": "Link",
+          "required": false
+        }
+      }
+    },
+    {
+      "key": "CTA",
+      "title": "Chamada para Acao",
+      "description": "Banner de chamada para acao com titulo, descricao e botao",
+      "group": "Marketing",
+      "path": "sections/CTA",
+      "props": {
+        "title": {
+          "type": "string",
+          "format": "text",
+          "title": "Titulo",
+          "required": true
+        },
+        "description": {
+          "type": "string",
+          "format": "textarea",
+          "title": "Descricao",
+          "required": false
+        },
+        "backgroundImage": {
+          "type": "string",
+          "format": "image",
+          "title": "Imagem de fundo",
+          "required": false
+        },
+        "backgroundColor": {
+          "type": "string",
+          "format": "color",
+          "title": "Cor de fundo",
+          "required": false
+        },
+        "style": {
+          "type": "string",
+          "format": "select",
+          "title": "Estilo",
+          "required": false,
+          "default": "dark",
+          "options": [
+            "light",
+            "dark",
+            "brand"
+          ]
+        },
+        "textColor": {
+          "type": "string",
+          "format": "color",
+          "title": "Cor do texto",
+          "required": false
+        },
+        "buttonColor": {
+          "type": "string",
+          "format": "color",
+          "title": "Cor do botao",
+          "required": false
+        },
+        "buttonTextColor": {
+          "type": "string",
+          "format": "color",
+          "title": "Cor do texto do botao",
+          "required": false
+        },
+        "buttonText": {
+          "type": "string",
+          "format": "text",
+          "title": "Texto do botao",
+          "required": false,
+          "default": "Saiba mais"
+        },
+        "buttonHref": {
+          "type": "string",
+          "format": "url",
+          "title": "Link do botao",
+          "required": true
+        },
+        "buttonNewTab": {
+          "type": "boolean",
+          "title": "Abrir em nova aba",
+          "required": false,
+          "default": false
+        }
+      }
+    },
+    {
+      "key": "CategoryPosts",
+      "title": "Posts por Categoria",
+      "description": "Colunas com posts agrupados por categoria",
+      "group": "Home",
+      "path": "sections/CategoryPosts",
+      "props": {
+        "categoryCount": {
+          "type": "number",
+          "title": "Numero de categorias",
+          "required": false,
+          "default": 3
+        },
+        "postsPerCategory": {
+          "type": "number",
+          "title": "Posts por categoria",
+          "required": false,
+          "default": 3
+        }
+      }
+    },
+    {
+      "key": "ContactForm",
+      "title": "Formulario de Contato",
+      "description": "Formulario com nome, email, telefone, assunto e mensagem",
+      "group": "Institucional",
+      "path": "sections/ContactForm",
+      "props": {
+        "title": {
+          "type": "string",
+          "format": "text",
+          "title": "Titulo",
+          "required": false,
+          "default": "Entre em Contato"
+        },
+        "subtitle": {
+          "type": "string",
+          "format": "text",
+          "title": "Subtitulo",
+          "required": false
+        },
+        "email": {
+          "type": "string",
+          "format": "text",
+          "title": "Email destino",
+          "required": true
+        },
+        "showPhone": {
+          "type": "boolean",
+          "title": "Mostrar campo telefone",
+          "required": false,
+          "default": true
+        },
+        "showSubject": {
+          "type": "boolean",
+          "title": "Mostrar campo assunto",
+          "required": false,
+          "default": true
+        },
+        "buttonText": {
+          "type": "string",
+          "format": "text",
+          "title": "Texto do botao",
+          "required": false,
+          "default": "Enviar"
+        },
+        "successMessage": {
+          "type": "string",
+          "format": "text",
+          "title": "Mensagem de sucesso",
+          "required": false,
+          "default": "Mensagem enviada com sucesso!"
+        }
+      }
+    },
+    {
+      "key": "Divider",
+      "title": "Separador",
+      "description": "Separador visual entre seções — linha, espaço ou pontos decorativos",
+      "group": "Layout",
+      "path": "sections/Divider",
+      "props": {
+        "style": {
+          "type": "string",
+          "format": "select",
+          "title": "Estilo",
+          "required": false,
+          "default": "line",
+          "options": [
+            "line",
+            "space",
+            "dots"
+          ]
+        },
+        "spacing": {
+          "type": "number",
+          "title": "Espacamento",
+          "required": false,
+          "default": 4
+        }
+      }
+    },
+    {
+      "key": "FAQ",
+      "title": "Perguntas Frequentes",
+      "description": "Perguntas frequentes em formato accordion",
+      "group": "Institucional",
+      "path": "sections/FAQ",
+      "props": {
+        "title": {
+          "type": "string",
+          "format": "text",
+          "title": "Titulo",
+          "required": true
+        },
+        "subtitle": {
+          "type": "string",
+          "format": "text",
+          "title": "Subtitulo",
+          "required": false
+        },
+        "items": {
+          "type": "array",
+          "title": "Perguntas",
+          "required": true,
+          "items": {
+            "type": "object",
+            "properties": {
+              "question": {
+                "type": "string",
+                "format": "text",
+                "title": "Pergunta",
+                "required": true
+              },
+              "answer": {
+                "type": "string",
+                "format": "textarea",
+                "title": "Resposta",
+                "required": true
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "key": "Features",
+      "title": "Destaques",
+      "description": "Grid de features com icone, titulo e descricao",
+      "group": "Conteudo",
+      "path": "sections/Features",
+      "props": {
+        "title": {
+          "type": "string",
+          "format": "text",
+          "title": "Titulo da secao",
+          "required": true
+        },
+        "subtitle": {
+          "type": "string",
+          "format": "text",
+          "title": "Subtitulo",
+          "required": false
+        },
+        "columns": {
+          "type": "number",
+          "title": "Colunas",
+          "required": false,
+          "default": 3
+        },
+        "items": {
+          "type": "array",
+          "title": "Itens",
+          "required": true,
+          "items": {
+            "type": "object",
+            "properties": {
+              "icon": {
+                "type": "string",
+                "format": "image",
+                "title": "Icone",
+                "required": false
+              },
+              "title": {
+                "type": "string",
+                "format": "text",
+                "title": "Titulo",
+                "required": true
+              },
+              "description": {
+                "type": "string",
+                "format": "textarea",
+                "title": "Descricao",
+                "required": true
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "key": "Footer",
+      "title": "Footer",
+      "description": "Rodape global com newsletter, redes sociais e copyright",
+      "group": "Global",
+      "path": "sections/Footer",
+      "props": {
+        "showNewsletter": {
+          "type": "boolean",
+          "title": "Mostrar newsletter",
+          "required": false,
+          "default": true
+        },
+        "showSocial": {
+          "type": "boolean",
+          "title": "Mostrar redes sociais",
+          "required": false,
+          "default": true
+        },
+        "showAbout": {
+          "type": "boolean",
+          "title": "Mostrar link \"Sobre\"",
+          "required": false,
+          "default": true
+        },
+        "showPrivacy": {
+          "type": "boolean",
+          "title": "Mostrar politica de privacidade",
+          "required": false,
+          "default": true
+        },
+        "footerText": {
+          "type": "string",
+          "format": "textarea",
+          "title": "Texto institucional",
+          "description": "Sobrescreve o texto do footer das configuracoes",
+          "required": false
+        },
+        "copyrightText": {
+          "type": "string",
+          "format": "text",
+          "title": "Texto de copyright",
+          "description": "Sobrescreve o copyright das configuracoes",
+          "required": false
+        },
+        "newsletterTitle": {
+          "type": "string",
+          "format": "text",
+          "title": "Titulo da newsletter",
+          "description": "Sobrescreve o titulo das configuracoes",
+          "required": false
+        },
+        "newsletterDescription": {
+          "type": "string",
+          "format": "textarea",
+          "title": "Descricao da newsletter",
+          "description": "Sobrescreve a descricao das configuracoes",
+          "required": false
+        },
+        "newsletterConsentText": {
+          "type": "string",
+          "format": "textarea",
+          "title": "Texto de consentimento",
+          "description": "Sobrescreve o consentimento das configuracoes",
+          "required": false
+        },
+        "aboutLabel": {
+          "type": "string",
+          "format": "text",
+          "title": "Label do link Sobre",
+          "required": false,
+          "default": "Sobre"
+        },
+        "aboutHref": {
+          "type": "string",
+          "format": "text",
+          "title": "URL do link Sobre",
+          "required": false,
+          "default": "/sobre"
+        },
+        "privacyLabel": {
+          "type": "string",
+          "format": "text",
+          "title": "Label do link Privacidade",
+          "required": false,
+          "default": "Politica de Privacidade"
+        },
+        "privacyHref": {
+          "type": "string",
+          "format": "text",
+          "title": "URL do link Privacidade",
+          "required": false,
+          "default": "/politica-de-privacidade"
+        },
+        "extraLinks": {
+          "type": "array",
+          "title": "Links extras",
+          "description": "Links adicionais exibidos no rodape",
+          "required": false,
+          "items": {
+            "type": "object",
+            "properties": {
+              "label": {
+                "type": "string",
+                "format": "text",
+                "title": "Texto",
+                "required": true
+              },
+              "href": {
+                "type": "string",
+                "format": "url",
+                "title": "URL",
+                "required": true
+              },
+              "newTab": {
+                "type": "boolean",
+                "title": "Abrir em nova aba",
+                "required": false,
+                "default": false
+              }
+            }
+          }
+        },
+        "backgroundColor": {
+          "type": "string",
+          "format": "color",
+          "title": "Cor de fundo",
+          "required": false
+        },
+        "textColor": {
+          "type": "string",
+          "format": "color",
+          "title": "Cor do texto",
+          "required": false
+        },
+        "logoWidth": {
+          "type": "number",
+          "title": "Largura do logo (px)",
+          "required": false,
+          "default": 140
+        },
+        "logoHeight": {
+          "type": "number",
+          "title": "Altura do logo (px)",
+          "required": false,
+          "default": 28
+        }
+      }
+    },
+    {
+      "key": "Gallery",
+      "title": "Gallery",
+      "path": "sections/Gallery",
+      "props": {
+        "title": {
+          "type": "string",
+          "format": "text",
+          "title": "Titulo",
+          "required": false
+        },
+        "items": {
+          "type": "array",
+          "title": "Itens",
+          "required": true,
+          "items": {
+            "type": "object",
+            "properties": {
+              "image": {
+                "type": "string",
+                "format": "image",
+                "title": "Imagem",
+                "required": true
+              },
+              "alt": {
+                "type": "string",
+                "format": "text",
+                "title": "Texto alternativo",
+                "required": true
+              },
+              "caption": {
+                "type": "string",
+                "format": "text",
+                "title": "Legenda",
+                "required": false
+              }
+            }
+          }
+        },
+        "columns": {
+          "type": "number",
+          "title": "Colunas",
+          "required": false,
+          "default": 3
+        },
+        "gap": {
+          "type": "number",
+          "title": "Espacamento",
+          "required": false,
+          "default": 2
+        }
+      }
+    },
+    {
+      "key": "Header",
+      "title": "Header",
+      "description": "Cabecalho global com logo, busca, menu de categorias",
+      "group": "Global",
+      "path": "sections/Header",
+      "props": {
+        "showSearch": {
+          "type": "boolean",
+          "title": "Mostrar busca",
+          "required": false,
+          "default": true
+        },
+        "showSocial": {
+          "type": "boolean",
+          "title": "Mostrar redes sociais",
+          "required": false,
+          "default": true
+        },
+        "showWhatsApp": {
+          "type": "boolean",
+          "title": "Mostrar WhatsApp",
+          "required": false,
+          "default": true
+        },
+        "showCategories": {
+          "type": "boolean",
+          "title": "Mostrar categorias",
+          "required": false,
+          "default": true
+        },
+        "showCta": {
+          "type": "boolean",
+          "title": "Mostrar botao CTA",
+          "required": false,
+          "default": true
+        },
+        "ctaLabel": {
+          "type": "string",
+          "format": "text",
+          "title": "Texto do botao CTA",
+          "description": "Texto exibido no botao de acao do header",
+          "required": false,
+          "default": "Loja Virtual"
+        },
+        "ctaUrl": {
+          "type": "string",
+          "format": "url",
+          "title": "Link do botao CTA",
+          "required": false,
+          "default": "https://loja.medicinalnaweb.com.br"
+        },
+        "whatsappText": {
+          "type": "string",
+          "format": "text",
+          "title": "Texto do botao WhatsApp",
+          "required": false,
+          "default": "Fale Conosco"
+        },
+        "whatsappMessage": {
+          "type": "string",
+          "format": "text",
+          "title": "Mensagem padrao do WhatsApp",
+          "description": "Mensagem pre-preenchida ao abrir o WhatsApp",
+          "required": false
+        },
+        "sticky": {
+          "type": "boolean",
+          "title": "Header fixo (sticky)",
+          "required": false,
+          "default": true
+        },
+        "backgroundColor": {
+          "type": "string",
+          "format": "color",
+          "title": "Cor de fundo",
+          "required": false
+        },
+        "logoWidth": {
+          "type": "number",
+          "title": "Largura do logo (px)",
+          "required": false,
+          "default": 160
+        },
+        "logoHeight": {
+          "type": "number",
+          "title": "Altura do logo (px)",
+          "required": false,
+          "default": 32
+        }
+      }
+    },
+    {
+      "key": "Hero",
+      "title": "Hero",
+      "description": "Secao principal com imagem de fundo, titulo e CTA",
+      "group": "Conteudo",
+      "path": "sections/Hero",
+      "props": {
+        "title": {
+          "type": "string",
+          "format": "text",
+          "title": "Titulo",
+          "required": true
+        },
+        "subtitle": {
+          "type": "string",
+          "format": "textarea",
+          "title": "Subtitulo",
+          "required": false
+        },
+        "content": {
+          "type": "string",
+          "format": "rich-text",
+          "title": "Conteudo",
+          "required": false
+        },
+        "align": {
+          "type": "string",
+          "format": "select",
+          "title": "Alinhamento",
+          "required": false,
+          "options": [
+            "esquerda",
+            "centro",
+            "direita"
+          ]
+        },
+        "backgroundImage": {
+          "type": "string",
+          "format": "image",
+          "title": "Imagem de fundo",
+          "required": false
+        },
+        "backgroundColor": {
+          "type": "string",
+          "format": "color",
+          "title": "Cor de fundo",
+          "required": false
+        },
+        "dark": {
+          "type": "boolean",
+          "title": "Fundo escuro",
+          "required": false,
+          "default": false
+        },
+        "textColor": {
+          "type": "string",
+          "format": "color",
+          "title": "Cor do texto",
+          "required": false
+        },
+        "buttonColor": {
+          "type": "string",
+          "format": "color",
+          "title": "Cor do botao",
+          "required": false
+        },
+        "buttonTextColor": {
+          "type": "string",
+          "format": "color",
+          "title": "Cor do texto do botao",
+          "required": false
+        },
+        "cta": {
+          "type": "object",
+          "title": "Botao CTA",
+          "required": false,
+          "properties": {
+            "label": {
+              "type": "string",
+              "format": "text",
+              "title": "Texto do botao",
+              "required": true
+            },
+            "href": {
+              "type": "string",
+              "format": "text",
+              "title": "Link",
+              "required": true
+            },
+            "newTab": {
+              "type": "boolean",
+              "title": "Abrir em nova aba",
+              "required": false
+            }
+          }
+        }
+      }
+    },
+    {
+      "key": "HeroPost",
+      "title": "Post Destaque",
+      "description": "Hero principal estilo UOL — post em destaque + lista lateral de posts recentes",
+      "group": "Home",
+      "path": "sections/HeroPost",
+      "props": {
+        "mode": {
+          "type": "string",
+          "format": "select",
+          "title": "Modo de selecao",
+          "required": false,
+          "default": "featured",
+          "options": [
+            "featured",
+            "manual"
+          ]
+        },
+        "manualSlug": {
+          "type": "string",
+          "format": "text",
+          "title": "Slug do post (modo manual)",
+          "description": "Informe o slug do post para exibir manualmente",
+          "required": false
+        },
+        "showCategory": {
+          "type": "boolean",
+          "title": "Mostrar categoria",
+          "required": false,
+          "default": true
+        },
+        "showAuthor": {
+          "type": "boolean",
+          "title": "Mostrar autor",
+          "required": false,
+          "default": true
+        },
+        "showReadingTime": {
+          "type": "boolean",
+          "title": "Mostrar tempo de leitura",
+          "required": false,
+          "default": true
+        },
+        "sideCount": {
+          "type": "number",
+          "title": "Posts laterais",
+          "required": false,
+          "default": 4
+        }
+      }
+    },
+    {
+      "key": "ImageText",
+      "title": "Imagem e Texto",
+      "description": "Imagem de um lado e texto do outro, responsivo",
+      "group": "Conteudo",
+      "path": "sections/ImageText",
+      "props": {
+        "title": {
+          "type": "string",
+          "format": "text",
+          "title": "Titulo",
+          "required": true
+        },
+        "text": {
+          "type": "string",
+          "format": "rich-text",
+          "title": "Texto",
+          "required": true
+        },
+        "image": {
+          "type": "string",
+          "format": "image",
+          "title": "Imagem",
+          "required": false
+        },
+        "imageAlt": {
+          "type": "string",
+          "format": "text",
+          "title": "Texto alternativo da imagem",
+          "required": false
+        },
+        "imagePosition": {
+          "type": "string",
+          "format": "select",
+          "title": "Posicao da imagem",
+          "required": false,
+          "default": "esquerda",
+          "options": [
+            "esquerda",
+            "direita"
+          ]
+        },
+        "textColor": {
+          "type": "string",
+          "format": "color",
+          "title": "Cor do texto",
+          "required": false
+        },
+        "backgroundColor": {
+          "type": "string",
+          "format": "color",
+          "title": "Cor de fundo",
+          "required": false
+        },
+        "style": {
+          "type": "string",
+          "format": "select",
+          "title": "Estilo",
+          "required": false,
+          "default": "light",
+          "options": [
+            "light",
+            "dark"
+          ]
+        }
+      }
+    },
+    {
+      "key": "LandingPageShowcase",
+      "title": "Vitrine de Landing Pages",
+      "description": "Exibe campanhas/LPs com destaque na marcada como featured e grid nas demais",
+      "group": "Home",
+      "path": "sections/LandingPageShowcase",
+      "props": {
+        "title": {
+          "type": "string",
+          "format": "text",
+          "title": "Titulo da secao",
+          "required": false,
+          "default": "Guias Especiais"
+        },
+        "limit": {
+          "type": "number",
+          "title": "Limite de LPs",
+          "required": false,
+          "default": 10
+        }
+      }
+    },
+    {
+      "key": "Logos",
+      "title": "Logos",
+      "path": "sections/Logos",
+      "props": {
+        "title": {
+          "type": "string",
+          "format": "text",
+          "title": "Titulo",
+          "required": false,
+          "default": "Parceiros"
+        },
+        "items": {
+          "type": "array",
+          "title": "Itens",
+          "required": true,
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "format": "text",
+                "title": "Nome",
+                "required": true
+              },
+              "logo": {
+                "type": "string",
+                "format": "image",
+                "title": "Logo",
+                "required": true
+              },
+              "url": {
+                "type": "string",
+                "format": "url",
+                "title": "URL",
+                "required": false
+              }
+            }
+          }
+        },
+        "grayscale": {
+          "type": "boolean",
+          "title": "Escala de cinza",
+          "required": false,
+          "default": true
+        }
+      }
+    },
+    {
+      "key": "LpBenefits",
+      "title": "LP Beneficios",
+      "description": "Grade de beneficios do produto com icones e descricoes",
+      "group": "Landing Page",
+      "path": "sections/LpBenefits",
+      "props": {
+        "productSlug": {
+          "type": "string",
+          "format": "text",
+          "title": "Slug do Produto",
+          "description": "Preencha para puxar beneficios do produto automaticamente",
+          "required": false
+        },
+        "title": {
+          "type": "string",
+          "format": "text",
+          "title": "Titulo da secao",
+          "required": false,
+          "default": "Por que escolher?"
+        },
+        "subtitle": {
+          "type": "string",
+          "format": "textarea",
+          "title": "Subtitulo",
+          "required": false
+        },
+        "items": {
+          "type": "array",
+          "title": "Itens de beneficio",
+          "required": false,
+          "items": {
+            "type": "object",
+            "properties": {
+              "icon": {
+                "type": "string",
+                "format": "select",
+                "title": "Icone",
+                "required": false,
+                "options": [
+                  "leaf",
+                  "shield",
+                  "heart",
+                  "zap",
+                  "star",
+                  "check"
+                ]
+              },
+              "title": {
+                "type": "string",
+                "format": "text",
+                "title": "Titulo",
+                "required": true
+              },
+              "description": {
+                "type": "string",
+                "format": "textarea",
+                "title": "Descricao",
+                "required": true
+              }
+            }
+          }
+        },
+        "columns": {
+          "type": "string",
+          "format": "select",
+          "title": "Colunas",
+          "required": false,
+          "default": "3",
+          "options": [
+            "2",
+            "3",
+            "4"
+          ]
+        },
+        "variant": {
+          "type": "string",
+          "format": "select",
+          "title": "Variante visual",
+          "required": false,
+          "default": "cards",
+          "options": [
+            "cards",
+            "minimal",
+            "icons-only"
+          ]
+        }
+      }
+    },
+    {
+      "key": "LpCTA",
+      "title": "LP CTA",
+      "description": "Secao de chamada para acao focada em conversao",
+      "group": "Landing Page",
+      "path": "sections/LpCTA",
+      "props": {
+        "productSlug": {
+          "type": "string",
+          "format": "text",
+          "title": "Slug do Produto",
+          "description": "Opcional — preenchido automaticamente no futuro",
+          "required": false
+        },
+        "title": {
+          "type": "string",
+          "format": "text",
+          "title": "Titulo",
+          "required": false,
+          "default": "Pronto para experimentar?"
+        },
+        "subtitle": {
+          "type": "string",
+          "format": "textarea",
+          "title": "Subtitulo",
+          "required": false
+        },
+        "ctaText": {
+          "type": "string",
+          "format": "text",
+          "title": "Texto do botao",
+          "required": false,
+          "default": "Falar pelo WhatsApp"
+        },
+        "ctaUrl": {
+          "type": "string",
+          "format": "url",
+          "title": "Link do botao",
+          "required": false
+        },
+        "variant": {
+          "type": "string",
+          "format": "select",
+          "title": "Variante visual",
+          "required": false,
+          "default": "default",
+          "options": [
+            "default",
+            "gradient",
+            "dark"
+          ]
+        },
+        "showWhatsAppIcon": {
+          "type": "boolean",
+          "title": "Exibir icone do WhatsApp",
+          "required": false,
+          "default": true
+        }
+      }
+    },
+    {
+      "key": "LpFAQ",
+      "title": "LP FAQ",
+      "description": "Perguntas frequentes com schema markup FAQPage para SEO",
+      "group": "Landing Page",
+      "path": "sections/LpFAQ",
+      "props": {
+        "title": {
+          "type": "string",
+          "format": "text",
+          "title": "Titulo",
+          "required": false,
+          "default": "Perguntas Frequentes"
+        },
+        "subtitle": {
+          "type": "string",
+          "format": "textarea",
+          "title": "Subtitulo",
+          "required": false
+        },
+        "items": {
+          "type": "array",
+          "title": "Perguntas e Respostas",
+          "description": "Se vazio e productSlug preenchido, usa o FAQ do produto",
+          "required": false,
+          "items": {
+            "type": "object",
+            "properties": {
+              "question": {
+                "type": "string",
+                "format": "text",
+                "title": "Pergunta",
+                "required": true
+              },
+              "answer": {
+                "type": "string",
+                "format": "textarea",
+                "title": "Resposta",
+                "required": true
+              }
+            }
+          }
+        },
+        "productSlug": {
+          "type": "string",
+          "format": "text",
+          "title": "Slug do Produto",
+          "description": "Preencha para puxar FAQ do produto automaticamente quando Items estiver vazio",
+          "required": false
+        },
+        "fullWidth": {
+          "type": "boolean",
+          "title": "Largura total",
+          "required": false,
+          "default": false
+        }
+      }
+    },
+    {
+      "key": "LpFeatureDetail",
+      "title": "LP Detalhe de Feature",
+      "description": "Secao com imagem e texto lado a lado, layout alternavel",
+      "group": "Landing Page",
+      "path": "sections/LpFeatureDetail",
+      "props": {
+        "title": {
+          "type": "string",
+          "format": "text",
+          "title": "Titulo",
+          "required": true
+        },
+        "description": {
+          "type": "string",
+          "format": "rich-text",
+          "title": "Descricao",
+          "required": false
+        },
+        "image": {
+          "type": "string",
+          "format": "image",
+          "title": "Imagem",
+          "required": false
+        },
+        "imageAlt": {
+          "type": "string",
+          "format": "text",
+          "title": "Texto alternativo da imagem",
+          "required": false
+        },
+        "layout": {
+          "type": "string",
+          "format": "select",
+          "title": "Layout",
+          "required": false,
+          "default": "image-left",
+          "options": [
+            "image-left",
+            "image-right"
+          ]
+        },
+        "showBadge": {
+          "type": "boolean",
+          "title": "Exibir badge",
+          "required": false,
+          "default": false
+        },
+        "badgeText": {
+          "type": "string",
+          "format": "text",
+          "title": "Texto do badge",
+          "required": false
+        }
+      }
+    },
+    {
+      "key": "LpHero",
+      "title": "LP Hero",
+      "description": "Hero principal da landing page com dados do produto",
+      "group": "Landing Page",
+      "path": "sections/LpHero",
+      "props": {
+        "productSlug": {
+          "type": "string",
+          "format": "text",
+          "title": "Slug do Produto",
+          "description": "Preencha para puxar nome e imagem do produto automaticamente",
+          "required": false
+        },
+        "headline": {
+          "type": "string",
+          "format": "text",
+          "title": "Titulo Principal",
+          "description": "Deixe vazio para usar o nome do produto",
+          "required": false
+        },
+        "subheadline": {
+          "type": "string",
+          "format": "textarea",
+          "title": "Subtitulo",
+          "description": "Deixe vazio para usar a descricao do produto",
+          "required": false
+        },
+        "ctaText": {
+          "type": "string",
+          "format": "text",
+          "title": "Texto do CTA",
+          "required": false,
+          "default": "Fale com o Farmaceutico"
+        },
+        "ctaUrl": {
+          "type": "string",
+          "format": "url",
+          "title": "Link do CTA",
+          "required": false
+        },
+        "backgroundImage": {
+          "type": "string",
+          "format": "image",
+          "title": "Imagem de fundo",
+          "required": false
+        },
+        "showProductImage": {
+          "type": "boolean",
+          "title": "Exibir imagem do produto",
+          "required": false,
+          "default": true
+        },
+        "layout": {
+          "type": "string",
+          "format": "select",
+          "title": "Layout",
+          "required": false,
+          "default": "image-right",
+          "options": [
+            "image-left",
+            "image-right"
+          ]
+        }
+      }
+    },
+    {
+      "key": "LpSocialProof",
+      "title": "LP Prova Social",
+      "description": "Numeros de destaque e logos de parceiros/certificacoes",
+      "group": "Landing Page",
+      "path": "sections/LpSocialProof",
+      "props": {
+        "title": {
+          "type": "string",
+          "format": "text",
+          "title": "Titulo da secao",
+          "required": false,
+          "default": "Numeros que comprovam"
+        },
+        "stats": {
+          "type": "array",
+          "title": "Stats / Numeros",
+          "required": false,
+          "items": {
+            "type": "object",
+            "properties": {
+              "prefix": {
+                "type": "string",
+                "format": "text",
+                "title": "Prefixo (ex: +)",
+                "required": false
+              },
+              "value": {
+                "type": "string",
+                "format": "text",
+                "title": "Valor (ex: 10.000)",
+                "required": true
+              },
+              "suffix": {
+                "type": "string",
+                "format": "text",
+                "title": "Sufixo (ex: %)",
+                "required": false
+              },
+              "label": {
+                "type": "string",
+                "format": "text",
+                "title": "Legenda",
+                "required": true
+              }
+            }
+          }
+        },
+        "showLogos": {
+          "type": "boolean",
+          "title": "Exibir logos",
+          "required": false,
+          "default": false
+        },
+        "logos": {
+          "type": "array",
+          "title": "Logos",
+          "required": false,
+          "items": {
+            "type": "object",
+            "properties": {
+              "image": {
+                "type": "string",
+                "format": "image",
+                "title": "Imagem do logo",
+                "required": true
+              },
+              "alt": {
+                "type": "string",
+                "format": "text",
+                "title": "Texto alternativo",
+                "required": true
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "key": "LpTestimonials",
+      "title": "LP Depoimentos",
+      "description": "Grid de depoimentos de clientes com avaliacao por estrelas",
+      "group": "Landing Page",
+      "path": "sections/LpTestimonials",
+      "props": {
+        "title": {
+          "type": "string",
+          "format": "text",
+          "title": "Titulo",
+          "required": false,
+          "default": "O que nossos clientes dizem"
+        },
+        "subtitle": {
+          "type": "string",
+          "format": "textarea",
+          "title": "Subtitulo",
+          "required": false
+        },
+        "items": {
+          "type": "array",
+          "title": "Depoimentos",
+          "required": true,
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "format": "text",
+                "title": "Nome do cliente",
+                "required": true
+              },
+              "role": {
+                "type": "string",
+                "format": "text",
+                "title": "Cargo ou descricao",
+                "required": false
+              },
+              "text": {
+                "type": "string",
+                "format": "textarea",
+                "title": "Depoimento",
+                "required": true
+              },
+              "rating": {
+                "type": "number",
+                "title": "Nota (1 a 5)",
+                "required": false,
+                "default": 5
+              },
+              "avatar": {
+                "type": "string",
+                "format": "image",
+                "title": "Foto do cliente",
+                "required": false
+              }
+            }
+          }
+        },
+        "variant": {
+          "type": "string",
+          "format": "select",
+          "title": "Variante visual",
+          "required": false,
+          "default": "cards",
+          "options": [
+            "cards",
+            "minimal"
+          ]
+        }
+      }
+    },
+    {
+      "key": "Map",
+      "title": "Mapa",
+      "description": "Mapa do Google Maps incorporado com endereço",
+      "group": "Institucional",
+      "path": "sections/Map",
+      "props": {
+        "title": {
+          "type": "string",
+          "format": "text",
+          "title": "Titulo",
+          "required": false
+        },
+        "address": {
+          "type": "string",
+          "format": "text",
+          "title": "Endereco",
+          "required": true
+        },
+        "mapUrl": {
+          "type": "string",
+          "format": "text",
+          "title": "URL do mapa (embed)",
+          "required": true
+        },
+        "height": {
+          "type": "number",
+          "title": "Altura do mapa (px)",
+          "required": false,
+          "default": 400
+        }
+      }
+    },
+    {
+      "key": "Newsletter",
+      "title": "Newsletter",
+      "description": "Formulário de inscrição na newsletter com múltiplos estilos visuais",
+      "group": "Marketing",
+      "path": "sections/Newsletter",
+      "props": {
+        "title": {
+          "type": "string",
+          "format": "text",
+          "title": "Titulo",
+          "required": false,
+          "default": "Assine nossa newsletter"
+        },
+        "description": {
+          "type": "string",
+          "format": "textarea",
+          "title": "Descricao",
+          "required": false
+        },
+        "buttonText": {
+          "type": "string",
+          "format": "text",
+          "title": "Texto do botao",
+          "required": false,
+          "default": "Inscrever"
+        },
+        "showName": {
+          "type": "boolean",
+          "title": "Mostrar campo nome",
+          "required": false,
+          "default": false
+        },
+        "style": {
+          "type": "string",
+          "format": "select",
+          "title": "Estilo",
+          "required": false,
+          "default": "card",
+          "options": [
+            "inline",
+            "card",
+            "fullwidth"
+          ]
+        },
+        "backgroundColor": {
+          "type": "string",
+          "format": "color",
+          "title": "Cor de fundo",
+          "required": false
+        }
+      }
+    },
+    {
+      "key": "PostBanner",
+      "title": "Banner de Post",
+      "description": "Post em destaque com imagem a esquerda e texto a direita",
+      "group": "Home",
+      "path": "sections/PostBanner",
+      "props": {
+        "mode": {
+          "type": "string",
+          "format": "select",
+          "title": "Modo",
+          "required": false,
+          "default": "recent",
+          "options": [
+            "recent",
+            "trending",
+            "popular",
+            "editor-picks",
+            "manual"
+          ]
+        },
+        "manualSlug": {
+          "type": "string",
+          "format": "text",
+          "title": "Slug do post (modo manual)",
+          "required": false
+        },
+        "homeSection": {
+          "type": "string",
+          "format": "text",
+          "title": "homeSection",
+          "description": "Valor da coluna home_section (banner, destaque, trending)",
+          "required": false
+        },
+        "offset": {
+          "type": "number",
+          "title": "Posicao no feed",
+          "description": "Qual post pegar da lista (ex: 1 = segundo post)",
+          "required": false,
+          "default": 0
+        }
+      }
+    },
+    {
+      "key": "PostCarousel",
+      "title": "Lista de Posts",
+      "description": "Lista numerada de posts (vertical ou horizontal)",
+      "group": "Home",
+      "path": "sections/PostCarousel",
+      "props": {
+        "title": {
+          "type": "string",
+          "format": "text",
+          "title": "Titulo da secao",
+          "required": true
+        },
+        "subtitle": {
+          "type": "string",
+          "format": "text",
+          "title": "Subtitulo",
+          "required": false
+        },
+        "mode": {
+          "type": "string",
+          "format": "select",
+          "title": "Modo",
+          "required": false,
+          "default": "trending",
+          "options": [
+            "recent",
+            "trending",
+            "popular",
+            "editor-picks",
+            "manual",
+            "homeSection"
+          ]
+        },
+        "manualSlugs": {
+          "type": "string",
+          "format": "text",
+          "title": "Slugs manuais",
+          "description": "Slugs separados por virgula (modo manual)",
+          "required": false
+        },
+        "homeSection": {
+          "type": "string",
+          "format": "text",
+          "title": "homeSection",
+          "description": "Valor da coluna home_section (trending, destaque, editor)",
+          "required": false
+        },
+        "limit": {
+          "type": "number",
+          "title": "Limite de posts",
+          "required": false,
+          "default": 5
+        },
+        "showCategory": {
+          "type": "boolean",
+          "title": "Mostrar categoria",
+          "required": false,
+          "default": true
+        },
+        "layout": {
+          "type": "string",
+          "format": "select",
+          "title": "Layout",
+          "required": false,
+          "default": "vertical",
+          "options": [
+            "vertical",
+            "horizontal"
+          ]
+        },
+        "viewAllHref": {
+          "type": "string",
+          "format": "text",
+          "title": "Link \"Ver todos\"",
+          "required": false
+        }
+      }
+    },
+    {
+      "key": "PostGrid",
+      "title": "Grade de Posts",
+      "description": "Grade de posts com filtros configuraveis",
+      "group": "Home",
+      "path": "sections/PostGrid",
+      "props": {
+        "title": {
+          "type": "string",
+          "format": "text",
+          "title": "Titulo da secao",
+          "required": true
+        },
+        "subtitle": {
+          "type": "string",
+          "format": "text",
+          "title": "Subtitulo",
+          "required": false
+        },
+        "mode": {
+          "type": "string",
+          "format": "select",
+          "title": "Modo",
+          "required": false,
+          "default": "recent",
+          "options": [
+            "recent",
+            "trending",
+            "popular",
+            "editor-picks",
+            "manual"
+          ]
+        },
+        "manualSlugs": {
+          "type": "string",
+          "format": "text",
+          "title": "Slugs manuais",
+          "description": "Slugs separados por virgula (modo manual)",
+          "required": false
+        },
+        "homeSection": {
+          "type": "string",
+          "format": "text",
+          "title": "homeSection",
+          "description": "Valor da coluna home_section (trending, destaque, editor, banner)",
+          "required": false
+        },
+        "limit": {
+          "type": "number",
+          "title": "Limite de posts",
+          "required": false,
+          "default": 6
+        },
+        "columns": {
+          "type": "number",
+          "title": "Colunas",
+          "required": false,
+          "default": 3
+        },
+        "showBorder": {
+          "type": "boolean",
+          "title": "Mostrar borda superior",
+          "required": false,
+          "default": true
+        },
+        "viewAllHref": {
+          "type": "string",
+          "format": "text",
+          "title": "Link \"Ver todos\"",
+          "required": false
+        },
+        "showCategory": {
+          "type": "boolean",
+          "title": "Mostrar categoria",
+          "required": false,
+          "default": true
+        },
+        "showAuthor": {
+          "type": "boolean",
+          "title": "Mostrar autor",
+          "required": false,
+          "default": false
+        },
+        "showReadingTime": {
+          "type": "boolean",
+          "title": "Mostrar tempo de leitura",
+          "required": false,
+          "default": true
+        }
+      }
+    },
+    {
+      "key": "PostGridWithSidebar",
+      "title": "Grade + Lista Lateral",
+      "description": "Posts em grid (2/3) com lista lateral (1/3)",
+      "group": "Home",
+      "path": "sections/PostGridWithSidebar",
+      "props": {
+        "gridTitle": {
+          "type": "string",
+          "format": "text",
+          "title": "Titulo do grid",
+          "required": true
+        },
+        "gridMode": {
+          "type": "string",
+          "format": "select",
+          "title": "Modo do grid",
+          "required": false,
+          "default": "recent",
+          "options": [
+            "recent",
+            "trending",
+            "popular",
+            "editor-picks",
+            "manual"
+          ]
+        },
+        "gridManualSlugs": {
+          "type": "string",
+          "format": "text",
+          "title": "Slugs manuais (grid)",
+          "description": "Slugs separados por virgula",
+          "required": false
+        },
+        "gridLimit": {
+          "type": "number",
+          "title": "Limite do grid",
+          "required": false,
+          "default": 4
+        },
+        "gridColumns": {
+          "type": "number",
+          "title": "Colunas do grid",
+          "required": false,
+          "default": 2
+        },
+        "gridShowCategory": {
+          "type": "boolean",
+          "title": "Mostrar categoria no grid",
+          "required": false,
+          "default": true
+        },
+        "gridLayout": {
+          "type": "string",
+          "format": "select",
+          "title": "Layout do card",
+          "required": false,
+          "default": "vertical",
+          "options": [
+            "vertical",
+            "horizontal"
+          ]
+        },
+        "gridHomeSection": {
+          "type": "string",
+          "format": "text",
+          "title": "homeSection do grid",
+          "description": "Valor da coluna home_section (trending, destaque, editor, banner)",
+          "required": false
+        },
+        "gridViewAllHref": {
+          "type": "string",
+          "format": "text",
+          "title": "Link \"Ver todos\" do grid",
+          "required": false
+        },
+        "sidebarTitle": {
+          "type": "string",
+          "format": "text",
+          "title": "Titulo da lista",
+          "required": true
+        },
+        "sidebarMode": {
+          "type": "string",
+          "format": "select",
+          "title": "Modo da lista",
+          "required": false,
+          "default": "trending",
+          "options": [
+            "recent",
+            "trending",
+            "popular",
+            "editor-picks",
+            "manual"
+          ]
+        },
+        "sidebarManualSlugs": {
+          "type": "string",
+          "format": "text",
+          "title": "Slugs manuais (lista)",
+          "description": "Slugs separados por virgula",
+          "required": false
+        },
+        "sidebarLimit": {
+          "type": "number",
+          "title": "Limite da lista",
+          "required": false,
+          "default": 5
+        },
+        "sidebarNumbered": {
+          "type": "boolean",
+          "title": "Mostrar numeros na sidebar",
+          "required": false,
+          "default": true
+        },
+        "sidebarHomeSection": {
+          "type": "string",
+          "format": "text",
+          "title": "homeSection da sidebar",
+          "required": false
+        },
+        "sidebarViewAllHref": {
+          "type": "string",
+          "format": "text",
+          "title": "Link \"Ver todos\" da sidebar",
+          "required": false
+        }
+      }
+    },
+    {
+      "key": "PostHighlight",
+      "title": "Destaque da Semana",
+      "description": "Hero com overlay na imagem + lista lateral de posts",
+      "group": "Home",
+      "path": "sections/PostHighlight",
+      "props": {
+        "title": {
+          "type": "string",
+          "format": "text",
+          "title": "Titulo da secao",
+          "required": false,
+          "default": "Destaque da Semana"
+        },
+        "mode": {
+          "type": "string",
+          "format": "select",
+          "title": "Modo",
+          "required": false,
+          "default": "editor-picks",
+          "options": [
+            "recent",
+            "trending",
+            "popular",
+            "editor-picks",
+            "manual"
+          ]
+        },
+        "manualSlugs": {
+          "type": "string",
+          "format": "text",
+          "title": "Slugs manuais",
+          "description": "Slugs separados por virgula (modo manual)",
+          "required": false
+        },
+        "homeSection": {
+          "type": "string",
+          "format": "text",
+          "title": "homeSection",
+          "description": "Valor da coluna home_section (destaque, trending, editor)",
+          "required": false
+        },
+        "sideCount": {
+          "type": "number",
+          "title": "Posts laterais",
+          "required": false,
+          "default": 3
+        },
+        "viewAllHref": {
+          "type": "string",
+          "format": "text",
+          "title": "Link \"Ver todos\"",
+          "required": false
+        }
+      }
+    },
+    {
+      "key": "Pricing",
+      "title": "Pricing",
+      "path": "sections/Pricing",
+      "props": {
+        "title": {
+          "type": "string",
+          "format": "text",
+          "title": "Titulo",
+          "required": false,
+          "default": "Planos"
+        },
+        "subtitle": {
+          "type": "string",
+          "format": "text",
+          "title": "Subtitulo",
+          "required": false
+        },
+        "plans": {
+          "type": "array",
+          "title": "Planos",
+          "required": true,
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "format": "text",
+                "title": "Nome do plano",
+                "required": true
+              },
+              "price": {
+                "type": "string",
+                "format": "text",
+                "title": "Preco",
+                "required": true
+              },
+              "period": {
+                "type": "string",
+                "format": "text",
+                "title": "Periodo",
+                "required": false,
+                "default": "mes"
+              },
+              "description": {
+                "type": "string",
+                "format": "textarea",
+                "title": "Descricao",
+                "required": true
+              },
+              "features": {
+                "type": "string",
+                "format": "text",
+                "title": "Funcionalidades",
+                "description": "Lista de funcionalidades separadas por virgula",
+                "required": true
+              },
+              "highlighted": {
+                "type": "boolean",
+                "title": "Destacar plano",
+                "required": false,
+                "default": false
+              },
+              "buttonText": {
+                "type": "string",
+                "format": "text",
+                "title": "Texto do botao",
+                "required": true
+              },
+              "buttonHref": {
+                "type": "string",
+                "format": "text",
+                "title": "Link do botao",
+                "required": true
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "key": "ProductShowcase",
+      "title": "Vitrine de Produtos",
+      "description": "Carrossel de produtos da farmacia",
+      "group": "Home",
+      "path": "sections/ProductShowcase",
+      "props": {
+        "title": {
+          "type": "string",
+          "format": "text",
+          "title": "Titulo da secao",
+          "required": false,
+          "default": "Nossos Produtos"
+        },
+        "mode": {
+          "type": "string",
+          "format": "select",
+          "title": "Modo",
+          "required": false,
+          "default": "all",
+          "options": [
+            "all",
+            "featured",
+            "category",
+            "manual"
+          ]
+        },
+        "categorySlug": {
+          "type": "string",
+          "format": "text",
+          "title": "Slug da categoria",
+          "description": "Slug da categoria de produto (modo category)",
+          "required": false
+        },
+        "manualSlugs": {
+          "type": "string",
+          "format": "text",
+          "title": "Slugs manuais",
+          "description": "Slugs dos produtos separados por virgula (modo manual)",
+          "required": false
+        },
+        "limit": {
+          "type": "number",
+          "title": "Limite",
+          "required": false,
+          "default": 12
+        },
+        "viewAllHref": {
+          "type": "string",
+          "format": "text",
+          "title": "Link \"Ver todos\"",
+          "required": false,
+          "default": "/produtos"
+        },
+        "showDescription": {
+          "type": "boolean",
+          "title": "Mostrar descricao",
+          "required": false,
+          "default": false
+        }
+      }
+    },
+    {
+      "key": "RichContent",
+      "title": "Conteudo Rico",
+      "description": "Bloco de conteudo rich-text centralizado com largura configuravel",
+      "group": "Conteudo",
+      "path": "sections/RichContent",
+      "props": {
+        "title": {
+          "type": "string",
+          "format": "text",
+          "title": "Titulo",
+          "required": false
+        },
+        "content": {
+          "type": "string",
+          "format": "rich-text",
+          "title": "Conteudo",
+          "required": true
+        },
+        "maxWidth": {
+          "type": "string",
+          "format": "select",
+          "title": "Largura maxima",
+          "required": false,
+          "default": "medium",
+          "options": [
+            "narrow",
+            "medium",
+            "wide"
+          ]
+        }
+      }
+    },
+    {
+      "key": "SmartProductShowcase",
+      "title": "Vitrine Inteligente",
+      "description": "Carrossel de produtos recomendados com base na temperatura e horario do usuario",
+      "group": "Home",
+      "path": "sections/SmartProductShowcase",
+      "props": {
+        "limit": {
+          "type": "number",
+          "title": "Limite de produtos",
+          "required": false,
+          "default": 8
+        }
+      }
+    },
+    {
+      "key": "SocialProof",
+      "title": "SocialProof",
+      "path": "sections/SocialProof",
+      "props": {
+        "title": {
+          "type": "string",
+          "format": "text",
+          "title": "Titulo",
+          "required": false
+        },
+        "items": {
+          "type": "array",
+          "title": "Itens",
+          "required": true,
+          "items": {
+            "type": "object",
+            "properties": {
+              "platform": {
+                "type": "string",
+                "format": "select",
+                "title": "Plataforma",
+                "required": true,
+                "options": [
+                  "google",
+                  "facebook",
+                  "instagram",
+                  "trustpilot"
+                ]
+              },
+              "rating": {
+                "type": "number",
+                "title": "Nota",
+                "required": true
+              },
+              "totalReviews": {
+                "type": "string",
+                "format": "text",
+                "title": "Total de avaliacoes",
+                "required": true
+              },
+              "url": {
+                "type": "string",
+                "format": "url",
+                "title": "URL da pagina",
+                "required": false
+              }
+            }
+          }
+        },
+        "style": {
+          "type": "string",
+          "format": "select",
+          "title": "Estilo",
+          "required": false,
+          "default": "compact",
+          "options": [
+            "compact",
+            "detailed"
+          ]
+        }
+      }
+    },
+    {
+      "key": "Stats",
+      "title": "Estatisticas",
+      "description": "Numeros grandes em destaque — \"500+ Clientes\", \"10 Anos\", etc.",
+      "group": "Institucional",
+      "path": "sections/Stats",
+      "props": {
+        "title": {
+          "type": "string",
+          "format": "text",
+          "title": "Titulo",
+          "required": false
+        },
+        "columns": {
+          "type": "number",
+          "title": "Colunas",
+          "required": false,
+          "default": 4
+        },
+        "style": {
+          "type": "string",
+          "format": "select",
+          "title": "Estilo",
+          "required": false,
+          "options": [
+            "light",
+            "dark",
+            "brand"
+          ]
+        },
+        "items": {
+          "type": "array",
+          "title": "Itens",
+          "required": true,
+          "items": {
+            "type": "object",
+            "properties": {
+              "value": {
+                "type": "string",
+                "format": "text",
+                "title": "Valor",
+                "required": true
+              },
+              "label": {
+                "type": "string",
+                "format": "text",
+                "title": "Label",
+                "required": true
+              },
+              "suffix": {
+                "type": "string",
+                "format": "text",
+                "title": "Sufixo",
+                "required": false
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "key": "Team",
+      "title": "Equipe",
+      "description": "Grid de membros da equipe com foto, cargo e bio",
+      "group": "Institucional",
+      "path": "sections/Team",
+      "props": {
+        "title": {
+          "type": "string",
+          "format": "text",
+          "title": "Titulo",
+          "required": true
+        },
+        "subtitle": {
+          "type": "string",
+          "format": "text",
+          "title": "Subtitulo",
+          "required": false
+        },
+        "columns": {
+          "type": "number",
+          "title": "Colunas",
+          "required": false,
+          "default": 3
+        },
+        "members": {
+          "type": "array",
+          "title": "Membros",
+          "required": true,
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "format": "text",
+                "title": "Nome",
+                "required": true
+              },
+              "role": {
+                "type": "string",
+                "format": "text",
+                "title": "Cargo",
+                "required": true
+              },
+              "bio": {
+                "type": "string",
+                "format": "textarea",
+                "title": "Bio",
+                "required": true
+              },
+              "photo": {
+                "type": "string",
+                "format": "image",
+                "title": "Foto",
+                "required": true
+              },
+              "linkedin": {
+                "type": "string",
+                "format": "text",
+                "title": "LinkedIn URL",
+                "required": false
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "key": "Testimonials",
+      "title": "Depoimentos",
+      "description": "Grid de depoimentos com avatar, nome e texto",
+      "group": "Institucional",
+      "path": "sections/Testimonials",
+      "props": {
+        "title": {
+          "type": "string",
+          "format": "text",
+          "title": "Titulo",
+          "required": true
+        },
+        "subtitle": {
+          "type": "string",
+          "format": "text",
+          "title": "Subtitulo",
+          "required": false
+        },
+        "columns": {
+          "type": "number",
+          "title": "Colunas",
+          "required": false,
+          "default": 3
+        },
+        "items": {
+          "type": "array",
+          "title": "Depoimentos",
+          "required": true,
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "format": "text",
+                "title": "Nome",
+                "required": true
+              },
+              "role": {
+                "type": "string",
+                "format": "text",
+                "title": "Cargo",
+                "required": true
+              },
+              "text": {
+                "type": "string",
+                "format": "textarea",
+                "title": "Depoimento",
+                "required": true
+              },
+              "avatar": {
+                "type": "string",
+                "format": "image",
+                "title": "Avatar",
+                "required": false
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "key": "Timeline",
+      "title": "Linha do Tempo",
+      "description": "Timeline vertical com anos, titulos e descricoes",
+      "group": "Institucional",
+      "path": "sections/Timeline",
+      "props": {
+        "title": {
+          "type": "string",
+          "format": "text",
+          "title": "Titulo",
+          "required": true
+        },
+        "subtitle": {
+          "type": "string",
+          "format": "text",
+          "title": "Subtitulo",
+          "required": false
+        },
+        "items": {
+          "type": "array",
+          "title": "Itens",
+          "required": true,
+          "items": {
+            "type": "object",
+            "properties": {
+              "year": {
+                "type": "string",
+                "format": "text",
+                "title": "Ano",
+                "required": true
+              },
+              "title": {
+                "type": "string",
+                "format": "text",
+                "title": "Titulo",
+                "required": true
+              },
+              "description": {
+                "type": "string",
+                "format": "textarea",
+                "title": "Descricao",
+                "required": true
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "key": "VideoEmbed",
+      "title": "Video",
+      "description": "Embed responsivo de video do YouTube ou Vimeo",
+      "group": "Conteudo",
+      "path": "sections/VideoEmbed",
+      "props": {
+        "title": {
+          "type": "string",
+          "format": "text",
+          "title": "Titulo",
+          "required": false
+        },
+        "description": {
+          "type": "string",
+          "format": "textarea",
+          "title": "Descricao",
+          "required": false
+        },
+        "videoUrl": {
+          "type": "string",
+          "format": "url",
+          "title": "URL do video",
+          "required": true
+        },
+        "aspectRatio": {
+          "type": "string",
+          "format": "select",
+          "title": "Proporcao",
+          "required": false,
+          "default": "16:9",
+          "options": [
+            "16:9",
+            "4:3",
+            "1:1"
+          ]
+        }
+      }
+    },
+    {
+      "key": "WeatherBar",
+      "title": "Barra de Temperatura",
+      "description": "Mostra a temperatura local do usuario com geolocalizacao",
+      "group": "Global",
+      "path": "sections/WeatherBar",
+      "props": {
+        "buttonText": {
+          "type": "string",
+          "format": "text",
+          "title": "Texto do botao",
+          "required": false,
+          "default": "Ver temperatura local"
+        }
+      }
+    },
+    {
+      "key": "WhatsAppCTA",
+      "title": "CTA WhatsApp",
+      "description": "Banner de contato com farmaceutico via WhatsApp",
+      "group": "Home",
+      "path": "sections/WhatsAppCTA",
+      "props": {
+        "title": {
+          "type": "string",
+          "format": "text",
+          "title": "Titulo",
+          "required": false,
+          "default": "Fale com um Farmaceutico"
+        },
+        "description": {
+          "type": "string",
+          "format": "text",
+          "title": "Descricao",
+          "required": false,
+          "default": "Tire suas duvidas sobre manipulados, suplementos e tratamentos personalizados com nossa equipe."
+        },
+        "buttonText": {
+          "type": "string",
+          "format": "text",
+          "title": "Texto do botao",
+          "required": false,
+          "default": "Iniciar conversa"
+        },
+        "defaultMessage": {
+          "type": "string",
+          "format": "text",
+          "title": "Mensagem padrao do WhatsApp",
+          "required": false,
+          "default": "Ola! Gostaria de saber mais sobre os produtos manipulados."
+        },
+        "style": {
+          "type": "string",
+          "format": "select",
+          "title": "Estilo",
+          "required": false,
+          "default": "brand",
+          "options": [
+            "light",
+            "dark",
+            "brand"
+          ]
+        }
+      }
+    }
+  ]
+}
