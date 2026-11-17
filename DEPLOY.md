@@ -17,8 +17,8 @@ novo deploy.
 
 ## Deploy na VPS (Docker)
 
-Pré-requisitos na VPS: Docker com o plugin compose e um proxy reverso com HTTPS
-(Caddy, Nginx, Traefik ou o que já atende o n8n).
+VPS da Medicinal: CloudPanel (Debian 13), IP `45.170.26.29`. Pré-requisito:
+Docker com o plugin compose (`curl -fsSL https://get.docker.com | sh`).
 
 ```bash
 git clone https://github.com/medicinal-na-web/blog.git
@@ -27,14 +27,10 @@ cp .env.example .env      # preencher SUPABASE_ANON_KEY (chave pública) e demai
 docker compose up -d --build
 ```
 
-O container fica em `127.0.0.1:3000`. No proxy reverso, aponte
-`blog.medicinalnaweb.com.br` para `http://127.0.0.1:3000`. Exemplo com Caddy:
-
-```
-blog.medicinalnaweb.com.br {
-    reverse_proxy 127.0.0.1:3000
-}
-```
+O container fica em `127.0.0.1:3010`. No CloudPanel: **Sites → Add Site →
+Create a Reverse Proxy**, domínio `blog.medicinalnaweb.com.br`, Reverse Proxy URL
+`http://127.0.0.1:3010`. Depois, na aba **SSL/TLS** do site: **Actions → New
+Let's Encrypt Certificate** (o DNS já precisa apontar para a VPS).
 
 Atualizar depois de um novo commit:
 
@@ -45,7 +41,8 @@ git pull && docker compose up -d --build
 ## DNS (Cloudflare)
 
 No registro `blog` da zona `medicinalnaweb.com.br`, trocar o IP antigo
-(`169.58.29.233`, servidor da Brasa) pelo IP da VPS da Medicinal.
+(`169.58.29.233`, servidor da Brasa) por `45.170.26.29`, com a nuvem cinza
+(DNS only) até o certificado ser emitido.
 
 ## Desenvolvimento local
 

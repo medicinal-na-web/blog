@@ -4,8 +4,8 @@
 #   cp .env.example .env   # preencher os valores
 #   docker compose up -d --build
 #
-# O container escuta na porta 3000 apenas em 127.0.0.1. O proxy reverso da VPS
-# (Caddy, Nginx, Traefik etc.) publica blog.medicinalnaweb.com.br com HTTPS.
+# O container escuta em 127.0.0.1:3010 (mude com BLOG_PORT no .env). O proxy reverso da VPS
+# (CloudPanel, Caddy, Nginx etc.) publica blog.medicinalnaweb.com.br com HTTPS.
 services:
   blog:
     build:
@@ -19,7 +19,7 @@ services:
     restart: unless-stopped
     env_file: .env
     ports:
-      - "127.0.0.1:3000:3000"
+      - "127.0.0.1:${BLOG_PORT:-3010}:3000"
     volumes:
       - blog-cache:/app/.next/cache
 
