@@ -15,28 +15,53 @@ Publicar ou editar um artigo no Supabase aparece no site em até 1 minuto
 (cache ISR de 60 s). Mudar layout ou configurações = editar o JSON e fazer
 novo deploy.
 
-## Deploy na VPS (Docker)
+## Deploy na VPS (CloudPanel, site Node.js)
 
-VPS da Medicinal: CloudPanel (Debian 13), IP `45.170.26.29`. Pré-requisito:
-Docker com o plugin compose (`curl -fsSL https://get.docker.com | sh`).
+VPS da Medicinal: CloudPanel (Debian 13), IP público `45.170.26.29`.
+
+### Primeira vez
+
+1. **CloudPanel → Sites → Add Site → Create a Node.js Site**
+   - Domain Name: `blog.medicinalnaweb.com.br`
+   - Node.js Version: **22**
+   - App Port: **3010**
+   - Site User e senha: anotar (é o usuário que roda o blog)
+2. Entrar como o usuário do site (SSH do site, aba **SSH/FTP** do site no CloudPanel) e rodar:
+
+   ```bash
+   cd ~/htdocs/blog.medicinalnaweb.com.br
+   git clone https://github.com/medicinal-na-web/blog.git app   # repositório privado: usar token de leitura
+   cd app
+   npm install -g pnpm@9 pm2
+   cp .env.example .env.production
+   nano .env.production     # preencher SUPABASE_ANON_KEY (chave pública) e REVALIDATE_SECRET
+   ./scripts/deploy.sh
+   curl -s -o /dev/null -w "%{http_code}\n" -A teste http://127.0.0.1:3010/   # esperado: 200
+   ```
+
+3. Religar sozinho depois de reiniciar o servidor: `crontab -e` e acrescentar
+
+   ```
+   @reboot cd ~/htdocs/blog.medicinalnaweb.com.br/app && pm2 resurrect
+   ```
+
+4. Com o DNS já apontando para a VPS (seção abaixo): no site, aba **SSL/TLS →
+   Actions → New Let's Encrypt Certificate**.
+
+### Atualizar depois de um novo commit
 
 ```bash
-git clone https://github.com/medicinal-na-web/blog.git
-cd blog
-cp .env.example .env      # preencher SUPABASE_ANON_KEY (chave pública) e demais valores
-docker compose up -d --build
+cd ~/htdocs/blog.medicinalnaweb.com.br/app && ./scripts/deploy.sh
 ```
 
-O container fica em `127.0.0.1:3010`. No CloudPanel: **Sites → Add Site →
-Create a Reverse Proxy**, domínio `blog.medicinalnaweb.com.br`, Reverse Proxy URL
-`http://127.0.0.1:3010`. Depois, na aba **SSL/TLS** do site: **Actions → New
-Let's Encrypt Certificate** (o DNS já precisa apontar para a VPS).
+O script faz `git pull`, build e reinicia o processo no PM2 sem derrubar o site.
 
-Atualizar depois de um novo commit:
+### Alternativa: Docker
 
-```bash
-git pull && docker compose up -d --build
-```
+O `Dockerfile` e o `docker-compose.yml` também funcionam
+(`docker compose up -d --build`, porta `127.0.0.1:3010`), para um servidor que
+já tenha Docker. No CloudPanel, nesse caso, usar **Create a Reverse Proxy** para
+`http://127.0.0.1:3010`.
 
 ## DNS (Cloudflare)
 
