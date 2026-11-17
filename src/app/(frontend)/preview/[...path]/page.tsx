@@ -1,10 +1,7 @@
 import { notFound } from "next/navigation";
-import Script from "next/script";
 import { cms } from "@/lib/cms";
 import type { SectionBlock } from "@/lib/cms";
 import { LivePreviewWrapper } from "@/components/LivePreviewWrapper";
-
-const CMS_URL = process.env.CMS_URL || "https://cms.brasa.tech";
 
 // No cache — always fetch fresh data from CMS
 export const dynamic = "force-dynamic";
@@ -42,10 +39,5 @@ export default async function PreviewPage({ params }: PageProps) {
     );
   }
 
-  return (
-    <>
-      <LivePreviewWrapper initialBlocks={blocks} />
-      <Script src={`${CMS_URL}/brasa-editor.js`} strategy="afterInteractive" />
-    </>
-  );
+  return <LivePreviewWrapper initialBlocks={blocks} />;
 }

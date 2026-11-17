@@ -10,7 +10,7 @@ export const revalidate = 60;
 export async function generateStaticParams() {
   const { getCategories } = await import("@/lib/queries");
   const cats = await getCategories();
-  return (cats ?? []).map((c: { slug: string }) => ({ slug: c.slug }));
+  return (cats?.docs ?? []).map((c: { slug: string }) => ({ slug: c.slug }));
 }
 
 type Props = {

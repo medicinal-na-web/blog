@@ -1,0 +1,22 @@
+{
+  "footer": {
+    "id": "global-footer",
+    "props": {
+      "showSocial": true,
+      "showPrivacy": true,
+      "showNewsletter": true
+    },
+    "component": "Footer"
+  },
+  "header": {
+    "id": "global-header",
+    "props": {
+      "showSearch": true,
+      "showSocial": true,
+      "showWhatsApp": true,
+      "showCategories": true,
+      "showRestrictedArea": true
+    },
+    "component": "Header"
+  }
+}

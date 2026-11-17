@@ -1,0 +1,1259 @@
+[
+  {
+    "id": 1,
+    "slug": "home",
+    "title": "Home",
+    "content": null,
+    "sections": [
+      {
+        "id": "hero-1",
+        "props": {
+          "mode": "featured",
+          "sideCount": 6,
+          "showAuthor": true,
+          "showCategory": true,
+          "showReadingTime": true
+        },
+        "component": "HeroPost"
+      },
+      {
+        "id": "grid-sidebar-1",
+        "props": {
+          "gridMode": "recent",
+          "gridLimit": 4,
+          "gridTitle": "Mais Recentes",
+          "gridLayout": "vertical",
+          "gridColumns": 2,
+          "sidebarMode": "homeSection",
+          "sidebarLimit": 8,
+          "sidebarTitle": "Tendencias",
+          "gridViewAllHref": "/blog",
+          "sidebarNumbered": true,
+          "gridShowCategory": true,
+          "sidebarHomeSection": "trending"
+        },
+        "component": "PostGridWithSidebar"
+      },
+      {
+        "id": "category-bar",
+        "props": {
+          "limit": 10,
+          "title": "Categorias",
+          "showAll": true
+        },
+        "component": "CategoryBar"
+      },
+      {
+        "id": "products",
+        "props": {
+          "mode": "featured",
+          "limit": 4,
+          "title": "Nossos Produtos",
+          "columns": 4,
+          "viewAllHref": "/produtos"
+        },
+        "component": "ProductShowcase"
+      },
+      {
+        "id": "grid-sidebar-2",
+        "props": {
+          "gridMode": "homeSection",
+          "gridLimit": 8,
+          "gridTitle": "Em Alta",
+          "gridLayout": "horizontal",
+          "gridColumns": 2,
+          "sidebarMode": "recent",
+          "sidebarLimit": 5,
+          "sidebarTitle": "Posts Recentes",
+          "gridHomeSection": "trending",
+          "gridViewAllHref": "/blog",
+          "sidebarNumbered": false,
+          "gridShowCategory": false,
+          "sidebarViewAllHref": "/blog"
+        },
+        "component": "PostGridWithSidebar"
+      },
+      {
+        "id": "highlight",
+        "props": {
+          "mode": "homeSection",
+          "title": "Destaque da Semana",
+          "sideCount": 3,
+          "homeSection": "destaque",
+          "viewAllHref": "/blog"
+        },
+        "component": "PostHighlight"
+      },
+      {
+        "id": "post-banner",
+        "props": {
+          "mode": "homeSection",
+          "offset": 0,
+          "homeSection": "banner"
+        },
+        "component": "PostBanner"
+      },
+      {
+        "id": "category-posts",
+        "props": {
+          "categoryCount": 3,
+          "postsPerCategory": 3
+        },
+        "component": "CategoryPosts"
+      },
+      {
+        "id": "newsletter",
+        "props": {
+          "style": "fullwidth",
+          "title": "Receba as melhores dicas de saude",
+          "showName": true,
+          "buttonText": "Enviar",
+          "description": "Cadastre-se e receba conteudos exclusivos sobre bem-estar, suplementos e vida saudavel.",
+          "backgroundColor": "#0d61ac"
+        },
+        "component": "Newsletter"
+      },
+      {
+        "id": "grid-novidades",
+        "props": {
+          "mode": "recent",
+          "limit": 8,
+          "title": "Novidades",
+          "columns": 4,
+          "showAuthor": false,
+          "showBorder": false,
+          "viewAllHref": "/blog",
+          "showCategory": true,
+          "showReadingTime": false
+        },
+        "component": "PostGrid"
+      },
+      {
+        "id": "mais-lidas",
+        "props": {
+          "mode": "popular",
+          "limit": 5,
+          "title": "Mais Lidas",
+          "layout": "horizontal",
+          "viewAllHref": "/blog",
+          "showCategory": false
+        },
+        "component": "PostCarousel"
+      }
+    ],
+    "draftSections": null,
+    "metaTitle": "Medicinal na Web",
+    "metaDescription": "Blog sobre saude, plantas medicinais e suplementos naturais",
+    "ogTitle": null,
+    "ogDescription": null,
+    "ogImageUrl": null
+  },
+  {
+    "id": 2,
+    "slug": "politica-de-privacidade",
+    "title": "Politica de Privacidade",
+    "content": "<article>\n  <header>\n    <h1>Política de Privacidade Digital da MEDICINAL NA WEB teste</h1>\n  </header>\n\n  <p>Esta Política de Privacidade Digital da MEDICINAL NA WEB (“Política de Privacidade”) descreve como coletamos e utilizamos as suas informações através de diversos meios digitais.</p>\n\n  <p>Ao acessar ou utilizar este website, o aplicativo de celular ou outro produto ou serviço MEDICINAL em qualquer computador, celular, tablet, console ou outro dispositivo, você concorda com a nossa Política de Privacidade.</p> \n\n  <p>A MEDICINAL pode modificar esta Política de Privacidade a qualquer momento, mediante a sua publicação.</p>\n\n  <section>\n    <h2>Coletando Informações</h2>\n\n    <section>\n      <h3>O Que Você Nos Fornece</h3>\n      <p>Nós coletamos informações fornecidas por você ou informações com acesso permitido por você.</p>\n      <p>As informações podem incluir, entre outros, seu nome, foto, data de nascimento, e-mail, endereço físico, número de telefone, gênero, listas de contato, informações de mídia social e perfil, informações de localização, informações de atividade e desempenho e, quando necessário, informações de cartão de crédito.</p>\n    </section>\n\n    <section>\n      <h3>O Que Coletamos de Você</h3>\n      <p>Podemos coletar automaticamente informações em relação à sua interação com nossos produtos e serviços.</p>\n      <p>As informações podem incluir número de telefone, informações de hardware, identificador do dispositivo, endereço de IP, tipo do navegador, idioma, informações de cookie, tipo do sistema, horários de acesso, URLs de referência, informações sobre compras e outras interações conosco.</p>\n    </section>\n\n    <section>\n      <h3>O Que Coletamos de Outras Interações MEDICINAL e de Terceiros</h3>\n      <p>Podemos combinar informações fornecidas por você com outras informações de comunicações, transações e fontes da MEDICINAL.</p>\n      <p>Também podemos combinar essas informações com dados disponíveis publicamente e dados de terceiros.</p>\n    </section>\n\n    <section>\n      <h3>Privacidade Infantil</h3>\n      <p>Nunca coletaremos ou solicitaremos informações, de forma consciente, de indivíduos menores de 18 anos, sem primeiro obter consentimento verificável dos pais.</p>\n    </section>\n  </section>\n\n  <section>\n    <h2>Utilizando Informações</h2>\n\n    <p>Podemos utilizar suas informações para:</p>\n\n    <ul>\n      <li>Habilitar o seu uso dos serviços.</li>\n      <li>Aprimorar, customizar e personalizar suas comunicações e experiências com a MEDICINAL.</li>\n      <li>Operar, fornecer, aprimorar e manter os produtos e serviços da MEDICINAL.</li>\n      <li>Enviar mensagens administrativas e outras informações sobre a MEDICINAL.</li>\n      <li>Falar com você sobre compras, informações da conta ou atendimento ao cliente.</li>\n      <li>Fornecer promoções e marketing.</li>\n      <li>Administrar concursos, promoções, eventos, pesquisas ou outros itens.</li>\n      <li>Exibir marketing relevante para você.</li>\n    </ul>\n  </section>\n\n  <section>\n    <h2>Compartilhando Informações</h2>\n\n    <section>\n      <h3>Prestadoras de Serviço</h3>\n      <p>Podemos transferir suas informações para prestadoras de serviço da MEDICINAL para realizar nossas atividades comerciais.</p>\n    </section>\n\n    <section>\n      <h3>Direitos de Proteção ou Por Lei</h3>\n      <p>Podemos divulgar informações a pedido do governo, em resposta a ordem judicial, quando exigido por lei, para cumprir nossas políticas ou proteger nossos direitos, bens e segurança.</p>\n    </section>\n\n    <section>\n      <h3>Transferências Comerciais</h3>\n      <p>As suas informações podem ser transferidas a terceiros como parte dos nossos ativos comerciais em uma venda de parte ou de toda a MEDICINAL.</p>\n    </section>\n  </section>\n\n  <section>\n    <h2>Compartilhamento Público</h2>\n\n    <section>\n      <h3>Compartilhamento Padrão</h3>\n      <p>Quando você se associa ou utiliza certos serviços, concorda em compartilhar publicamente uma quantidade básica de informações, que podem incluir nome de usuário, localização da cidade e foto do perfil.</p>\n    </section>\n\n    <section>\n      <h3>O Que Você Decide Compartilhar</h3>\n      <p>Você pode escolher as informações que deseja compartilhar e ajustar suas configurações de privacidade para participar de certos recursos.</p>\n    </section>\n\n    <section>\n      <h3>Compartilhamento da MEDICINAL</h3>\n      <p>As informações compartilhadas publicamente podem ser utilizadas pela MEDICINAL para fins promocionais.</p>\n    </section>\n\n    <section>\n      <h3>Depoimentos no Site</h3>\n      <p>Os usuários do site poderão publicar depoimentos ou comentários sobre a marca, produtos e experiências.</p>\n      <p>Esses depoimentos serão previamente analisados pela MEDICINAL e poderão ser excluídos sem prévio aviso.</p>\n\n      <p>A MEDICINAL excluirá os depoimentos ou comentários que:</p>\n\n      <ol type=\"I\">\n        <li>Possam causar danos a terceiros, seja através de difamação, injúria, calúnia, danos materiais ou danos morais.</li>\n        <li>Contenham palavras obscenas ou pornográficas.</li>\n        <li>Contenham informações que possam ser entendidas como incitação à prática de crimes ou contravenção penal.</li>\n        <li>Violem qualquer lei ou sejam inapropriadas.</li>\n      </ol>\n\n      <p>Os usuários autorizam, expressa e gratuitamente, a publicação dos seus depoimentos em quaisquer meios de comunicação, no Brasil e no exterior, por prazo indeterminado.</p>\n    </section>\n  </section>\n\n  <section>\n    <h2>Proteção de Informações</h2>\n\n    <section>\n      <h3>Medidas de Segurança</h3>\n      <p>Temos uma variedade de medidas de segurança, incluindo ferramentas de criptografia e autenticação, para ajudar a proteger suas informações.</p>\n      <p>Utilizamos servidores seguros quando você realiza seus pedidos.</p>\n    </section>\n\n    <section>\n      <h3>Sem Garantia</h3>\n      <p>Entretanto, assim como outras empresas, a MEDICINAL não pode garantir totalmente a segurança ou a confidencialidade das informações fornecidas por você.</p>\n    </section>\n  </section>\n\n  <section>\n    <h2>Ferramentas de Coleta</h2>\n\n    <section>\n      <h3>Como Coletamos Informações</h3>\n      <p>A MEDICINAL coleta informações automaticamente dentro dos nossos produtos ou serviços, ou armazenadas pelo seu navegador ou dispositivo.</p>\n      <p>Utilizamos diversos métodos para coletar essas informações, incluindo cookies e pixel tags/web beacons.</p>\n    </section>\n\n    <section>\n      <h3>Desativando as Ferramentas de Coleta</h3>\n      <p>Se você desativar algumas ferramentas de coleta, pode ser que não tenha acesso a diversos recursos e alguns serviços podem não funcionar adequadamente.</p>\n      <p>Você ainda pode obter suporte pelo telefone, entrando em contato com a central de atendimento ao cliente, no número (44) 3225-2600.</p>\n    </section>\n  </section>\n\n  <section>\n    <h2>Modificando ou Eliminando Suas Informações</h2>\n    <p>Você pode modificar ou eliminar o seu perfil em certos serviços da MEDICINAL através da sua conta.</p>\n    <p>As suas informações postadas anteriormente ainda poderão ser visualizadas publicamente.</p>\n    <p>A MEDICINAL pode reter informações e conteúdo em nossas pastas e arquivos de backup.</p>\n  </section>\n\n  <section>\n    <h2>Comunicação, Cancelamento de Inscrição e Opt-Out</h2>\n    <p>Independentemente das configurações escolhidas, você pode receber comunicados relacionados a serviços da MEDICINAL.</p>\n    <p>Para cancelar a inscrição e parar de receber mensagens, altere suas configurações ou siga as instruções no e-mail, mensagem de texto, notificação ou outro tipo de mensagem.</p>\n  </section>\n\n  <section>\n    <h2>Termos de Uso</h2>\n    <p>Termos de Uso em desenvolvimento.</p>\n    <p>O uso de nossos produtos e serviços, e quaisquer disputas oriundas deles, está sujeito a esta Política de Privacidade, bem como aos nossos Termos de Uso.</p>\n  </section>\n\n  <section>\n    <h2>Contato</h2>\n    <address>\n      <p>Central de Atendimento ao Cliente: <a href=\"tel:+554432252600\">(44) 3225-2600</a></p>\n      <p>Atendimento: segunda à sexta, das 8h às 18h</p>\n      <p>E-mail: <a href=\"mailto:vendas@atendimentomedicinal.net\">vendas@atendimentomedicinal.net</a></p>\n    </address>\n  </section>\n\n  <footer>\n    <p>© 2016 PRODUZIDO POR Medicinal Farmácia e Manipulação Ltda.</p>\n    <p>Rua Luiz Gama, 335 - Zona 01. Maringá PR / Brasil.</p>\n    <p>Responsável Técnico: Meizze Valéria Rocha - CRF-PR 20450</p>\n  </footer>\n</article>",
+    "sections": [
+      {
+        "id": "content-privacidade",
+        "props": {
+          "title": "Politica de Privacidade",
+          "content": "<p>Conteudo da politica de privacidade sera configurado pelo admin.</p>",
+          "maxWidth": "narrow"
+        },
+        "component": "RichContent"
+      }
+    ],
+    "draftSections": [
+      {
+        "id": "content-privacidade",
+        "props": {
+          "title": "Politica de Privacidade",
+          "content": "<p>Conteudo da politica de privacidade sera configurado pelo admin.</p>",
+          "maxWidth": "narrow"
+        },
+        "component": "RichContent"
+      }
+    ],
+    "metaTitle": "Politica de Privacidade",
+    "metaDescription": "Politica de privacidade do Medicinal na Web",
+    "ogTitle": null,
+    "ogDescription": null,
+    "ogImageUrl": null
+  },
+  {
+    "id": 3,
+    "slug": "blog",
+    "title": "Blog",
+    "content": null,
+    "sections": [
+      {
+        "id": "catbar-blog",
+        "props": {
+          "limit": 10,
+          "title": "Categorias",
+          "showAll": true
+        },
+        "component": "CategoryBar"
+      },
+      {
+        "id": "postgrid-blog",
+        "props": {
+          "mode": "recent",
+          "limit": 12,
+          "title": "Todos os Posts",
+          "columns": 3,
+          "subtitle": "Artigos, dicas e novidades",
+          "showAuthor": true,
+          "showCategory": true,
+          "showReadingTime": true
+        },
+        "component": "PostGrid"
+      },
+      {
+        "id": "newsletter-blog",
+        "props": {
+          "style": "card",
+          "title": "Assine nossa newsletter",
+          "buttonText": "Inscrever",
+          "description": "Receba os melhores conteudos diretamente no seu e-mail."
+        },
+        "component": "Newsletter"
+      }
+    ],
+    "draftSections": [
+      {
+        "id": "catbar-blog",
+        "props": {
+          "limit": 10,
+          "title": "Categorias",
+          "showAll": true
+        },
+        "component": "CategoryBar"
+      },
+      {
+        "id": "postgrid-blog",
+        "props": {
+          "mode": "recent",
+          "limit": 12,
+          "title": "Todos os Posts",
+          "columns": 3,
+          "subtitle": "Artigos, dicas e novidades",
+          "showAuthor": true,
+          "showCategory": true,
+          "showReadingTime": true
+        },
+        "component": "PostGrid"
+      },
+      {
+        "id": "newsletter-blog",
+        "props": {
+          "style": "card",
+          "title": "Assine nossa newsletter",
+          "buttonText": "Inscrever",
+          "description": "Receba os melhores conteudos diretamente no seu e-mail."
+        },
+        "component": "Newsletter"
+      }
+    ],
+    "metaTitle": "Blog | Medicinal na Web",
+    "metaDescription": "Artigos sobre saude, suplementos naturais e bem-estar",
+    "ogTitle": null,
+    "ogDescription": null,
+    "ogImageUrl": null
+  },
+  {
+    "id": 4,
+    "slug": "categorias",
+    "title": "Categorias",
+    "content": null,
+    "sections": [
+      {
+        "id": "catbar-categorias",
+        "props": {
+          "limit": 20,
+          "title": "Todas as Categorias",
+          "showAll": true
+        },
+        "component": "CategoryBar"
+      },
+      {
+        "id": "postgrid-categorias",
+        "props": {
+          "mode": "recent",
+          "limit": 12,
+          "title": "Posts por Categoria",
+          "columns": 3,
+          "showCategory": true,
+          "showReadingTime": true
+        },
+        "component": "PostGrid"
+      }
+    ],
+    "draftSections": null,
+    "metaTitle": "Categorias | Medicinal na Web",
+    "metaDescription": "Explore nossas categorias de conteudo",
+    "ogTitle": null,
+    "ogDescription": null,
+    "ogImageUrl": null
+  },
+  {
+    "id": 5,
+    "slug": "search",
+    "title": "Busca",
+    "content": null,
+    "sections": null,
+    "draftSections": null,
+    "metaTitle": "Busca | Medicinal na Web",
+    "metaDescription": "Busque posts e produtos no Medicinal na Web",
+    "ogTitle": null,
+    "ogDescription": null,
+    "ogImageUrl": null
+  },
+  {
+    "id": 6,
+    "slug": "produtos",
+    "title": "Produtos",
+    "content": null,
+    "sections": [
+      {
+        "id": "showcase-produtos",
+        "props": {
+          "mode": "all",
+          "limit": 16,
+          "title": "Nossos Produtos",
+          "columns": 4,
+          "viewAllHref": "",
+          "showDescription": true
+        },
+        "component": "ProductShowcase"
+      },
+      {
+        "id": "wpp-produtos",
+        "props": {
+          "style": "brand",
+          "title": "Duvidas sobre nossos produtos?",
+          "buttonText": "Falar com farmaceutico",
+          "description": "Fale com um farmaceutico e tire todas as suas duvidas sobre manipulados e suplementos.",
+          "defaultMessage": "Ola! Gostaria de saber mais sobre os produtos."
+        },
+        "component": "WhatsAppCTA"
+      }
+    ],
+    "draftSections": null,
+    "metaTitle": "Todos os Produtos | Medicinal na Web",
+    "metaDescription": "Confira todos os produtos disponiveis na Medicinal na Web",
+    "ogTitle": null,
+    "ogDescription": null,
+    "ogImageUrl": null
+  },
+  {
+    "id": 20,
+    "slug": "campanhas/morosil",
+    "title": "Morosil",
+    "content": null,
+    "sections": [
+      {
+        "id": "lp-hero",
+        "props": {
+          "cta": {
+            "href": "https://medicinalnaweb.com.br/morosil-500mg-60-doses/p",
+            "label": "Manipular meu Morosil"
+          },
+          "dark": true,
+          "size": "large",
+          "align": "centro",
+          "title": "Morosil",
+          "subtitle": "Guia completo do Morosil: origem, mecanismo, evidências clínicas, como tomar e contraindicações — com a visão evidência-vs-hype da Medicinal.",
+          "backgroundImage": "https://hsixbybpwvhvkwxeaxup.supabase.co/storage/v1/object/public/blog-images/landing-pages/morosil-hero-1781187531897.png"
+        },
+        "component": "Hero"
+      },
+      {
+        "id": "lp-takeaways",
+        "props": {
+          "title": "Em resumo",
+          "columns": 2,
+          "features": [
+            {
+              "icon": "check",
+              "title": "",
+              "description": "O Morosil é um extrato padronizado do suco da laranja vermelha Moro (Citrus sinensis), rica em antocianinas como a cianidina-3-glicosídeo."
+            },
+            {
+              "icon": "check",
+              "title": "",
+              "description": "Estudos clínicos com 400 mg/dia, de 12 semanas a 6 meses, associaram o Morosil à redução de peso, IMC e circunferência abdominal — sempre junto a dieta e exercício."
+            },
+            {
+              "icon": "check",
+              "title": "",
+              "description": "A dose usual fica entre 400 e 500 mg ao dia, por via oral; a forma injetável não tem aprovação da ANVISA."
+            },
+            {
+              "icon": "check",
+              "title": "",
+              "description": "É um coadjuvante: não substitui alimentação equilibrada, atividade física nem acompanhamento profissional."
+            }
+          ]
+        },
+        "component": "Features"
+      },
+      {
+        "id": "lp-content",
+        "props": {
+          "content": "O Morosil é um extrato padronizado da laranja vermelha Moro, estudado como coadjuvante na redução de medidas e da gordura abdominal. Nesta página, você encontra o que a ciência realmente mostra sobre ele — sem promessas vazias: origem, mecanismo de ação, estudos clínicos, como tomar, contraindicações e como escolher um Morosil de procedência confiável.\n\n## O que é o Morosil?\n\nO Morosil é a marca registrada de um extrato seco e padronizado obtido do suco da laranja Moro (*Citrus sinensis* (L.) Osbeck), uma variedade de laranja vermelha cultivada nas encostas do vulcão Etna, na Sicília, Itália. É um ingrediente desenvolvido especificamente para o gerenciamento de peso, comercializado no Brasil principalmente em cápsulas manipuladas.\n\nO que torna a laranja Moro diferente das laranjas comuns é a cor — e o que ela revela. A polpa avermelhada vem da concentração incomum de **antocianinas**, pigmentos antioxidantes raros em frutas cítricas, que só se desenvolvem plenamente no microclima do Etna: dias quentes, noites frias e solo vulcânico. É essa combinação geográfica que explica por que o extrato autêntico tem origem controlada.\n\nVale separar três coisas que costumam se confundir: a **fruta** (laranja Moro), o **extrato padronizado** (Morosil, com teor garantido de compostos ativos) e os **suplementos genéricos** de \"laranja moro\" sem padronização. Os estudos clínicos foram conduzidos com o extrato padronizado — e é a ele que os resultados se referem. Por isso, a procedência da matéria-prima importa tanto quanto a dose.\n\n## Composição bioativa do Morosil\n\nA composição do Morosil é o que sustenta seu interesse científico. O destaque é a **cianidina-3-glicosídeo (C3G)**, a antocianina mais abundante do extrato e a mais estudada em relação ao metabolismo de gorduras. É ela a principal candidata a explicar os efeitos observados nos estudos clínicos.\n\nMas o extrato não é um composto isolado — é um **fitocomplexo**, e a literatura sugere que o efeito vem da ação combinada dos seus grupos de bioativos:\n\n- **Antocianinas** (cianidina-3-glicosídeo e derivados): pigmentos antioxidantes associados à modulação do acúmulo de gordura nos adipócitos;\n- **Flavanonas cítricas** (hesperidina e naringenina): flavonoides típicos das laranjas, com ação antioxidante e anti-inflamatória descrita em estudos;\n- **Ácidos hidroxicinâmicos**: compostos fenólicos que complementam o pool antioxidante;\n- **Vitamina C (ácido ascórbico)**: presente naturalmente no suco da fruta, em teor superior ao de outras variedades de laranja.\n\nA padronização é o ponto técnico decisivo: o extrato autêntico garante teor mínimo definido desses compostos, lote a lote. Suplementos sem padronização podem conter quantidades muito variáveis — e é impossível esperar deles os resultados descritos na literatura com o extrato padronizado.\n\n## Como o Morosil age no corpo?\n\nO Morosil age principalmente sobre o **tecido adiposo**: seus compostos fenólicos atuam na modulação da adipogênese (a formação e o \"enchimento\" das células de gordura) e no estímulo à quebra e queima de lipídios. Em termos simples: ele interfere na forma como o corpo armazena e mobiliza gordura — especialmente na região abdominal.\n\nDetalhando os mecanismos descritos na literatura:\n\n**Menos acúmulo nos adipócitos.** Estudos in vitro e em animais mostram que as antocianinas da laranja Moro, em especial a C3G, reduzem o acúmulo de lipídios dentro dos adipócitos, modulando genes ligados à formação de novas células de gordura e ao armazenamento nas existentes.\n\n**Mais lipólise e β-oxidação.** Pesquisas indicam que o fitocomplexo estimula a quebra da gordura estocada (lipólise) e sua conversão em energia (β-oxidação). É por isso que a prática de exercício potencializa o resultado: o corpo precisa \"usar\" a gordura mobilizada.\n\n**Apoio ao equilíbrio metabólico.** Há dados associando o extrato à melhora da sensibilidade à insulina e do perfil lipídico — efeitos que se conectam ao menor acúmulo de gordura visceral, embora ainda precisem de mais estudos para serem conclusivos.\n\n**Ação antioxidante e anti-inflamatória.** O conjunto de polifenóis combate o estresse oxidativo associado ao excesso de tecido adiposo, que tem componente inflamatório de baixo grau.\n\nUm ponto de honestidade científica: boa parte do detalhamento de mecanismo vem de estudos pré-clínicos (células e animais). Os ensaios em humanos medem o resultado final — peso, IMC, circunferências —, não cada etapa bioquímica. O caminho proposto é plausível e coerente com os dados, mas o Morosil deve ser entendido como **coadjuvante** de um processo que depende de déficit calórico e movimento. Para aprofundar essa relação, veja nosso artigo sobre [Morosil para emagrecimento](https://medicinalnaweb.com.br/posts/morosil-para-emagrecimento-o-que-voce-precisa-saber).\n\n## Morosil: por onde sai a gordura?\n\nA pergunta é uma das mais buscadas sobre o ativo — e a resposta direta é: **a gordura não \"sai\" por lugar nenhum em forma de gordura**. O Morosil não é laxante nem bloqueador de absorção. A gordura mobilizada é convertida em energia pelo metabolismo: o corpo a \"queima\" no processo de β-oxidação, e os subprodutos finais são eliminados principalmente como **gás carbônico (pela respiração) e água**.\n\nEssa diferença importa para alinhar expectativas. Ativos como a quitosana ou medicamentos como o orlistate atuam reduzindo a absorção da gordura ingerida — daí os efeitos intestinais conhecidos. O Morosil trabalha por outra via: modula o armazenamento e estimula o uso da gordura **já estocada** como combustível. Por isso ele não costuma \"soltar o intestino\", e por isso o exercício físico é parte do mecanismo, não um acessório — é a atividade que consome a gordura mobilizada. Entenda mais em [como diminuir a gordura abdominal](https://medicinalnaweb.com.br/posts/saiba-como-diminuir-a-gordura-abdominal-de-uma-vez-por-todas).\n\nE o apetite? O Morosil **não é um supressor de fome**. Alguns usuários relatam menos vontade de beliscar, possivelmente ligada ao melhor equilíbrio metabólico, mas esse não é seu mecanismo principal. Quem busca saciedade costuma avaliar outros ativos, como fibras — falamos disso no comparativo mais adiante.\n\n## Evidências e estudos clínicos do Morosil\n\nO Morosil tem três ensaios clínicos randomizados e controlados por placebo publicados — uma base pequena, mas acima da média dos suplementos para gerenciamento de peso, que raramente têm sequer um.\n\n**Cardile et al. (2015)** — o estudo de referência. 60 adultos com sobrepeso receberam 400 mg/dia de Morosil ou placebo por 12 semanas. O grupo suplementado apresentou redução estatisticamente significativa (p<0,05) de peso corporal, IMC e circunferências de cintura e quadril em relação ao placebo.\n\n**Briskey et al. (2022)** — replicação independente, na Austrália. Ensaio randomizado, duplo-cego e controlado por placebo, com adultos de 20 a 65 anos com sobrepeso, ao longo de 6 meses, usando absorciometria (DXA) para medir composição corporal. Confirmou perda de peso e redução de medidas superiores ao placebo, com efeito sobre massa gorda.\n\n**Kegele et al. (2019)** — ensaio brasileiro com extrato seco de laranja Moro em duas doses diárias, completando o trio Itália–Austrália–Brasil citado nas revisões da literatura.\n\nAntes deles, **Titta et al. (2009)** já havia mostrado, em camundongos, que o suco da laranja Moro inibia o acúmulo de gordura mesmo com maior ingestão calórica — o achado pré-clínico que motivou os estudos em humanos.\n\nA leitura honesta: os resultados são consistentes entre si e apontam na mesma direção, mas o conjunto ainda é pequeno, com amostras modestas. É evidência **boa para um coadjuvante** — não para um tratamento. Em todos os estudos, os participantes mantinham orientação alimentar e atividade física.\n\n## Morosil é enganação?\n\nNão — o Morosil não é enganação. É um dos poucos ativos da categoria com ensaios clínicos randomizados e controlados publicados, conduzidos em três países, com resultados consistentes de redução de peso e medidas.\n\n**Enganação é o que parte do marketing faz com ele.** Promessas como \"perca X quilos em N semanas sem dieta\" não têm respaldo em nenhum dos estudos — todos avaliaram o extrato como parte de uma rotina com alimentação orientada e movimento. Quem compra esperando efeito sozinho provavelmente vai se frustrar e concluir, injustamente, que \"não funciona\".\n\nOs sinais de alerta para identificar oferta desonesta: promessa de quilos definidos, \"antes e depois\" milagroso, ausência de procedência da matéria-prima e a versão injetável (que tratamos na seção de cuidados). O Morosil funciona dentro do que a ciência descreve: um empurrão mensurável, não um milagre.\n\n## Morosil: como tomar\n\nA posologia usual do Morosil é de **400 mg a 500 mg por dia, em dose única, por via oral** — a faixa usada nos estudos clínicos foi de 400 mg/dia. Pode ser tomado com ou sem alimentos; em pessoas com estômago sensível, tomar junto a uma refeição tende a melhorar a tolerância.\n\nSobre o horário: não há evidência de superioridade de um período específico. O mais importante é a **constância** — escolher um horário fixo ajuda a não esquecer. O Morosil não contém cafeína nem estimulantes, então não costuma interferir no sono.\n\nSobre a duração: os estudos avaliaram o uso por **12 semanas a 6 meses**. Na prática, considera-se um ciclo mínimo de 8 a 12 semanas antes de avaliar resultados — sempre medindo circunferências e composição corporal, não só o ponteiro da balança.\n\nCápsulas ou pó? O efeito depende da dose do extrato, não da forma. A vantagem da manipulação é justamente ajustar **dose, forma farmacêutica e combinações** (com outros ativos, quando fizer sentido) à prescrição individual. A definição de dose, duração e eventuais associações deve partir de médico ou nutricionista, conforme o objetivo e o contexto de cada pessoa.\n\n## Morosil: contraindicações, efeitos colaterais e cuidados\n\nO Morosil é bem tolerado pela maioria das pessoas nas doses estudadas, mas há situações que pedem atenção — e é exatamente essa informação que falta na maior parte das páginas sobre o ativo.\n\n**Contraindicações.** Hipersensibilidade ou alergia a frutas cítricas é a contraindicação direta. Na **gestação e lactação**, os dados de segurança são limitados: o uso só deve ocorrer com orientação médica expressa.\n\n**Efeitos colaterais possíveis.** Os relatos mais comuns são leves e gastrointestinais: desconforto gástrico, principalmente em quem tem gastrite, úlcera ou refluxo — nestes casos, tomar com alimento ajuda. **Diarreia não é um efeito típico**: o Morosil não age no intestino como bloqueadores de gordura. Também não há evidência de que prejudique o fígado nas doses usuais — ao contrário, estudos pré-clínicos sugerem efeito protetor sobre o acúmulo de gordura hepática, ainda em investigação.\n\n**Interações.** Compostos cítricos podem interferir em enzimas hepáticas (família CYP) que metabolizam diversos medicamentos, e há atenção teórica com **hipoglicemiantes**. Quem usa medicação contínua deve informar o prescritor antes de iniciar.\n\n**Sobre o Morosil injetável.** Existe no mercado um uso injetável do ativo, sem aprovação da ANVISA para essa via — os estudos clínicos que sustentam o Morosil foram todos conduzidos com a **via oral**. A Medicinal trabalha exclusivamente com a forma oral manipulada, que é a forma estudada e regularizada. Desconfie de ofertas de \"Morosil booster injetável\": além do risco regulatório, não há evidência publicada para essa aplicação.\n\n## Morosil ou outros emagrecedores: comparativo\n\nA pergunta certa não é \"qual é o melhor?\", e sim **\"qual resolve o meu caso?\"** — cada ativo desta categoria atua num alvo diferente, e é por isso que muitas vezes aparecem combinados em formulações manipuladas. Comparando o Morosil com os ativos mais buscados junto a ele:\n\n**Morosil vs Dimpless** — alvos diferentes. O Dimpless é uma superóxido dismutase extraída do melão, estudada para a aparência da **celulite**; o Morosil mira **gordura corporal e medidas**. Não competem: tratam queixas distintas e podem coexistir num plano.\n\n**Morosil vs Cactin** — o Cactin, extraído do cacto *Opuntia ficus-indica*, atua sobre **retenção de líquidos e drenagem** — explicamos em detalhe em [como o Cactin age na drenagem linfática](https://medicinalnaweb.com.br/posts/como-cactin-pode-ajudar-na-drenagem-linfatica-e-circulacao). Quem desincha com Cactin não perdeu gordura; quem usa Morosil não trata retenção. A confusão entre \"desinchar\" e \"emagrecer\" explica boa parte das frustrações com ambos.\n\n**Morosil vs Picolinato de cromo** — o cromo participa do metabolismo da **glicose** e é estudado para compulsão por doces. Perfil complementar: um age no estoque de gordura, outro no comportamento alimentar ligado ao açúcar.\n\n**Morosil vs Okralin** — o Okralin, derivado do quiabo, atua na **redução da absorção de gorduras da refeição** (daí seus efeitos intestinais possíveis). O Morosil age na gordura já armazenada — mecanismos opostos no tempo: um no prato, outro no estoque.\n\n**Morosil vs Ioimbina e Berberina** — a ioimbina é estimulante, com cautelas cardiovasculares e de sono; a berberina atua no metabolismo glicêmico via AMPK. Ambas têm perfis de precaução mais delicados que o do Morosil, que não é estimulante.\n\n**E as combinações?** \"Morosil com colágeno\", \"Morosil com Cactin\" e similares são buscas frequentes — e tecnicamente viáveis, já que os mecanismos não conflitam. Há inclusive interesse crescente em associá-lo a tratamentos prescritos, como mostramos no artigo sobre [tirzepatida e Morosil](https://medicinalnaweb.com.br/posts/tirzepatida-como-funciona-e-como-o-morosil-pode-potencializar-seus-resultados). A vantagem de manipular é exatamente compor a fórmula que o seu prescritor definir, em vez de empilhar potes industrializados.\n\n## Por que manipular o Morosil na Medicinal?\n\nQuem pesquisa **Morosil manipulado** geralmente quer saber duas coisas: se é original e se é confiável. A resposta passa pela matéria-prima e pelo processo.\n\n**Matéria-prima certificada e rastreável.** A Medicinal manipula o [Morosil 500 mg](https://medicinalnaweb.com.br/morosil-500mg-60-doses/p) com o extrato padronizado original — fabricado pela italiana Bionap e distribuído no Brasil pela Galena —, com certificado de análise por lote. É o mesmo extrato da laranja Moro siciliana usado nos estudos clínicos, não um \"extrato de laranja moro\" genérico sem padronização.\n\n**Dose sob medida.** O industrializado vem na dose que a marca escolheu. Na manipulação, a cápsula segue a **prescrição**: 400 mg, 500 mg ou o ajuste que o seu profissional definir — inclusive combinando ativos na mesma fórmula quando indicado, como visto no comparativo.\n\n**Formulação limpa.** Cápsulas sem corantes desnecessários, com opções veganas e livres de alergênicos (sem lactose, sem glúten), adequadas a restrições individuais.\n\n**Farmacêutico de verdade no atendimento.** Antes, durante e depois: nossa equipe técnica orienta sobre uso, interações e expectativas realistas — o oposto do balcão anônimo.\n\nManipular não é \"versão alternativa\" do produto: é o mesmo ativo, na dose certa para você, com lastro documental.\n\n## Morosil: o essencial para decidir\n\nO Morosil é um coadjuvante com lastro real: extrato padronizado da laranja Moro, três ensaios clínicos controlados, mecanismo plausível e bom perfil de tolerância. Não promete milagre — entrega um empurrão mensurável a quem já está cuidando da alimentação e do movimento.\n\nSe o seu prescritor indicou o Morosil, manipule com quem trata o ativo com a seriedade que ele merece: matéria-prima certificada, dose sob prescrição e farmacêutico de verdade no atendimento.\n\n---\n\n*Este conteúdo tem caráter informativo e não substitui consulta, diagnóstico ou prescrição por profissional de saúde habilitado. O Morosil é um suplemento alimentar — não é medicamento — e seu uso deve estar associado a alimentação equilibrada e hábitos saudáveis. Resultados variam de pessoa para pessoa. Em caso de dúvidas sobre interações com medicamentos em uso, consulte seu médico ou farmacêutico. Alegações em conformidade com a legislação sanitária vigente (ANVISA).*",
+          "maxWidth": "medium"
+        },
+        "component": "RichContent"
+      },
+      {
+        "id": "lp-references",
+        "props": {
+          "content": "## Referências Científicas\n\n1. Cardile V, Graziano ACE, Venditti A (2015). *Clinical evaluation of Moro (Citrus sinensis (L.) Osbeck) orange juice supplementation for the weight management*. Natural Product Research 29(23):2256-2260. [PubMed](https://pubmed.ncbi.nlm.nih.gov/25559596/)\n\n2. Briskey D, et al. (2022). *Effectiveness of Moro Blood Orange Citrus sinensis Osbeck (Rutaceae) Standardized Extract on Weight Loss in Overweight but Otherwise Healthy Men and Women — A Randomized Double-Blind Placebo-Controlled Study*. Nutrients 14(3):427. [PubMed](https://www.mdpi.com/2072-6643/14/3/427)\n\n3. Kegele et al. (2019). *Ensaio clínico brasileiro com extrato de laranja Moro*. ensaio clínico (Brasil).\n\n4. Titta L, et al. (2009). *Blood orange juice inhibits fat accumulation in mice*. International Journal of Obesity 34(3):578-588.\n\n",
+          "maxWidth": "medium"
+        },
+        "component": "RichContent"
+      },
+      {
+        "id": "lp-faq",
+        "props": {
+          "items": [
+            {
+              "answer": "Não existe número garantido — desconfie de quem promete. Nos estudos clínicos, a redução de peso e medidas apareceu ao longo de 12 semanas a 6 meses de uso contínuo, sempre com dieta e exercício. O ritmo varia conforme o organismo, o déficit calórico e a rotina de cada pessoa.",
+              "question": "Morosil emagrece quantos quilos por semana?"
+            },
+            {
+              "answer": "Não. O Morosil não age no intestino nem bloqueia a absorção de gordura — ele atua sobre a gordura já armazenada. Alterações intestinais não são efeito típico do ativo; se ocorrerem de forma persistente, vale investigar outras causas com um profissional.",
+              "question": "Morosil solta o intestino?"
+            },
+            {
+              "answer": "Sim. O Morosil é um extrato seco e padronizado obtido do suco da laranja vermelha Moro (Citrus sinensis), cultivada na região do vulcão Etna, na Sicília. Ser natural, porém, não dispensa cuidados: dose adequada, procedência da matéria-prima e orientação profissional continuam essenciais.",
+              "question": "Morosil é natural?"
+            },
+            {
+              "answer": "A forma em pó segue a mesma lógica das cápsulas: o que importa é a dose do extrato, geralmente 400 a 500 mg ao dia. O pó costuma ser diluído em água ou suco, conforme a orientação da farmácia. A escolha entre pó e cápsula é de praticidade, não de eficácia.",
+              "question": "Morosil em pó: como tomar?"
+            },
+            {
+              "answer": "Os estudos clínicos disponíveis indicam que sim, como coadjuvante: três ensaios randomizados e controlados mostraram redução significativa de peso, IMC e medidas em relação ao placebo, sempre com alimentação orientada e atividade física. Sozinho, sem mudança de hábitos, o resultado tende a decepcionar.",
+              "question": "Morosil emagrece mesmo?"
+            },
+            {
+              "answer": "Não é essa a sua função principal. O Morosil não é um supressor de apetite — ele atua no metabolismo da gordura armazenada. Algumas pessoas relatam menos vontade de beliscar, mas quem busca saciedade costuma avaliar outros recursos com o prescritor, como fibras.",
+              "question": "Morosil tira a fome?"
+            },
+            {
+              "answer": "Diarreia não é um efeito colateral típico do Morosil, já que ele não interfere na absorção intestinal de gorduras. Os relatos mais comuns são de leve desconforto gástrico em pessoas sensíveis, que costuma melhorar tomando o ativo junto a uma refeição.",
+              "question": "Morosil dá diarreia?"
+            },
+            {
+              "answer": "Sim. É contraindicado para quem tem alergia ou hipersensibilidade a frutas cítricas. Na gravidez e amamentação, os dados de segurança são limitados — use apenas com orientação médica. Quem toma medicamentos contínuos, especialmente hipoglicemiantes, deve informar o prescritor antes de iniciar.",
+              "question": "Morosil tem contraindicação?"
+            },
+            {
+              "answer": "O Morosil é estudado como coadjuvante na redução de peso, IMC e circunferências de cintura e quadril, com foco na gordura abdominal. Soma-se a isso a ação antioxidante das antocianinas da laranja Moro. Os resultados dependem da associação com dieta e atividade física.",
+              "question": "Morosil é bom para quê?"
+            },
+            {
+              "answer": "Não há evidência de dano hepático nas doses usuais de 400 a 500 mg ao dia. Pesquisas pré-clínicas sugerem, ao contrário, possível efeito protetor contra o acúmulo de gordura no fígado — ainda em investigação. Quem tem doença hepática deve, de todo modo, conversar com o médico antes.",
+              "question": "Morosil faz mal para o fígado?"
+            },
+            {
+              "answer": "Não. O Morosil não é termogênico nem estimulante: ele não acelera o metabolismo pela via da temperatura ou da adrenalina. Sua ação descrita é sobre o armazenamento e a mobilização da gordura nos adipócitos, por meio das antocianinas como a cianidina-3-glicosídeo.",
+              "question": "Morosil é termogênico?"
+            },
+            {
+              "answer": "Não há motivo para isso: o Morosil não contém cafeína nem substâncias estimulantes, então não costuma interferir no sono. Pode ser tomado em qualquer horário do dia — o mais importante é manter a regularidade do uso ao longo das semanas.",
+              "question": "Morosil tira o sono?"
+            },
+            {
+              "answer": "Não. O Morosil não atua sobre retenção de líquidos — esse é o território de ativos como o Cactin. A redução de medidas associada ao Morosil nos estudos vem da ação sobre a gordura corporal, não da eliminação de água.",
+              "question": "Morosil é diurético?"
+            },
+            {
+              "answer": "Não. O Morosil é composto apenas pelo extrato padronizado da laranja Moro — antocianinas, flavanonas, ácidos hidroxicinâmicos e vitamina C. Não contém cafeína, sinefrina ou outros estimulantes, o que explica seu bom perfil de tolerância.",
+              "question": "Morosil tem cafeína?"
+            },
+            {
+              "answer": "Em geral, sim — combinações como Morosil com colágeno, Cactin ou picolinato de cromo são comuns e os mecanismos não conflitam. O ideal é que a associação seja definida pelo seu médico ou nutricionista; na manipulação, os ativos podem inclusive compor uma única fórmula.",
+              "question": "Posso tomar Morosil com colágeno ou outros ativos?"
+            }
+          ],
+          "title": "Perguntas Frequentes"
+        },
+        "component": "FAQ"
+      },
+      {
+        "id": "lp-related",
+        "props": {
+          "content": "## Leitura complementar\n\n- [Morosil manipulado 500 mg](https://medicinalnaweb.com.br/morosil-500mg-60-doses/p)\n- [Morosil para emagrecimento: o que você precisa saber](https://medicinalnaweb.com.br/posts/morosil-para-emagrecimento-o-que-voce-precisa-saber)\n- [Tirzepatida: como funciona e como o Morosil pode potencializar seus resultados](https://medicinalnaweb.com.br/posts/tirzepatida-como-funciona-e-como-o-morosil-pode-potencializar-seus-resultados)\n- [Saiba como diminuir a gordura abdominal de uma vez por todas](https://medicinalnaweb.com.br/posts/saiba-como-diminuir-a-gordura-abdominal-de-uma-vez-por-todas)\n- [Como Cactin pode ajudar na drenagem linfática e circulação](https://medicinalnaweb.com.br/posts/como-cactin-pode-ajudar-na-drenagem-linfatica-e-circulacao)\n",
+          "maxWidth": "medium"
+        },
+        "component": "RichContent"
+      },
+      {
+        "id": "lp-cta",
+        "props": {
+          "title": "Quer manipular Morosil com qualidade?",
+          "variant": "primary",
+          "subtitle": "Fale com nosso time de farmacêuticos para uma fórmula sob medida.",
+          "buttonUrl": "https://wa.me/5544984014719",
+          "buttonText": "Falar com um farmacêutico"
+        },
+        "component": "CTA"
+      }
+    ],
+    "draftSections": [
+      {
+        "id": "lp-hero",
+        "props": {
+          "cta": {
+            "href": "https://medicinalnaweb.com.br/morosil-500mg-60-doses/p",
+            "label": "Manipular meu Morosil"
+          },
+          "dark": true,
+          "size": "large",
+          "align": "centro",
+          "title": "Morosil",
+          "subtitle": "Guia completo do Morosil: origem, mecanismo, evidências clínicas, como tomar e contraindicações — com a visão evidência-vs-hype da Medicinal.",
+          "backgroundImage": "https://hsixbybpwvhvkwxeaxup.supabase.co/storage/v1/object/public/blog-images/landing-pages/morosil-hero-1781187531897.png"
+        },
+        "component": "Hero"
+      },
+      {
+        "id": "lp-takeaways",
+        "props": {
+          "title": "Em resumo",
+          "columns": 2,
+          "features": [
+            {
+              "icon": "check",
+              "title": "",
+              "description": "O Morosil é um extrato padronizado do suco da laranja vermelha Moro (Citrus sinensis), rica em antocianinas como a cianidina-3-glicosídeo."
+            },
+            {
+              "icon": "check",
+              "title": "",
+              "description": "Estudos clínicos com 400 mg/dia, de 12 semanas a 6 meses, associaram o Morosil à redução de peso, IMC e circunferência abdominal — sempre junto a dieta e exercício."
+            },
+            {
+              "icon": "check",
+              "title": "",
+              "description": "A dose usual fica entre 400 e 500 mg ao dia, por via oral; a forma injetável não tem aprovação da ANVISA."
+            },
+            {
+              "icon": "check",
+              "title": "",
+              "description": "É um coadjuvante: não substitui alimentação equilibrada, atividade física nem acompanhamento profissional."
+            }
+          ]
+        },
+        "component": "Features"
+      },
+      {
+        "id": "lp-content",
+        "props": {
+          "content": "O Morosil é um extrato padronizado da laranja vermelha Moro, estudado como coadjuvante na redução de medidas e da gordura abdominal. Nesta página, você encontra o que a ciência realmente mostra sobre ele — sem promessas vazias: origem, mecanismo de ação, estudos clínicos, como tomar, contraindicações e como escolher um Morosil de procedência confiável.\n\n## O que é o Morosil?\n\nO Morosil é a marca registrada de um extrato seco e padronizado obtido do suco da laranja Moro (*Citrus sinensis* (L.) Osbeck), uma variedade de laranja vermelha cultivada nas encostas do vulcão Etna, na Sicília, Itália. É um ingrediente desenvolvido especificamente para o gerenciamento de peso, comercializado no Brasil principalmente em cápsulas manipuladas.\n\nO que torna a laranja Moro diferente das laranjas comuns é a cor — e o que ela revela. A polpa avermelhada vem da concentração incomum de **antocianinas**, pigmentos antioxidantes raros em frutas cítricas, que só se desenvolvem plenamente no microclima do Etna: dias quentes, noites frias e solo vulcânico. É essa combinação geográfica que explica por que o extrato autêntico tem origem controlada.\n\nVale separar três coisas que costumam se confundir: a **fruta** (laranja Moro), o **extrato padronizado** (Morosil, com teor garantido de compostos ativos) e os **suplementos genéricos** de \"laranja moro\" sem padronização. Os estudos clínicos foram conduzidos com o extrato padronizado — e é a ele que os resultados se referem. Por isso, a procedência da matéria-prima importa tanto quanto a dose.\n\n## Composição bioativa do Morosil\n\nA composição do Morosil é o que sustenta seu interesse científico. O destaque é a **cianidina-3-glicosídeo (C3G)**, a antocianina mais abundante do extrato e a mais estudada em relação ao metabolismo de gorduras. É ela a principal candidata a explicar os efeitos observados nos estudos clínicos.\n\nMas o extrato não é um composto isolado — é um **fitocomplexo**, e a literatura sugere que o efeito vem da ação combinada dos seus grupos de bioativos:\n\n- **Antocianinas** (cianidina-3-glicosídeo e derivados): pigmentos antioxidantes associados à modulação do acúmulo de gordura nos adipócitos;\n- **Flavanonas cítricas** (hesperidina e naringenina): flavonoides típicos das laranjas, com ação antioxidante e anti-inflamatória descrita em estudos;\n- **Ácidos hidroxicinâmicos**: compostos fenólicos que complementam o pool antioxidante;\n- **Vitamina C (ácido ascórbico)**: presente naturalmente no suco da fruta, em teor superior ao de outras variedades de laranja.\n\nA padronização é o ponto técnico decisivo: o extrato autêntico garante teor mínimo definido desses compostos, lote a lote. Suplementos sem padronização podem conter quantidades muito variáveis — e é impossível esperar deles os resultados descritos na literatura com o extrato padronizado.\n\n## Como o Morosil age no corpo?\n\nO Morosil age principalmente sobre o **tecido adiposo**: seus compostos fenólicos atuam na modulação da adipogênese (a formação e o \"enchimento\" das células de gordura) e no estímulo à quebra e queima de lipídios. Em termos simples: ele interfere na forma como o corpo armazena e mobiliza gordura — especialmente na região abdominal.\n\nDetalhando os mecanismos descritos na literatura:\n\n**Menos acúmulo nos adipócitos.** Estudos in vitro e em animais mostram que as antocianinas da laranja Moro, em especial a C3G, reduzem o acúmulo de lipídios dentro dos adipócitos, modulando genes ligados à formação de novas células de gordura e ao armazenamento nas existentes.\n\n**Mais lipólise e β-oxidação.** Pesquisas indicam que o fitocomplexo estimula a quebra da gordura estocada (lipólise) e sua conversão em energia (β-oxidação). É por isso que a prática de exercício potencializa o resultado: o corpo precisa \"usar\" a gordura mobilizada.\n\n**Apoio ao equilíbrio metabólico.** Há dados associando o extrato à melhora da sensibilidade à insulina e do perfil lipídico — efeitos que se conectam ao menor acúmulo de gordura visceral, embora ainda precisem de mais estudos para serem conclusivos.\n\n**Ação antioxidante e anti-inflamatória.** O conjunto de polifenóis combate o estresse oxidativo associado ao excesso de tecido adiposo, que tem componente inflamatório de baixo grau.\n\nUm ponto de honestidade científica: boa parte do detalhamento de mecanismo vem de estudos pré-clínicos (células e animais). Os ensaios em humanos medem o resultado final — peso, IMC, circunferências —, não cada etapa bioquímica. O caminho proposto é plausível e coerente com os dados, mas o Morosil deve ser entendido como **coadjuvante** de um processo que depende de déficit calórico e movimento. Para aprofundar essa relação, veja nosso artigo sobre [Morosil para emagrecimento](https://medicinalnaweb.com.br/posts/morosil-para-emagrecimento-o-que-voce-precisa-saber).\n\n## Morosil: por onde sai a gordura?\n\nA pergunta é uma das mais buscadas sobre o ativo — e a resposta direta é: **a gordura não \"sai\" por lugar nenhum em forma de gordura**. O Morosil não é laxante nem bloqueador de absorção. A gordura mobilizada é convertida em energia pelo metabolismo: o corpo a \"queima\" no processo de β-oxidação, e os subprodutos finais são eliminados principalmente como **gás carbônico (pela respiração) e água**.\n\nEssa diferença importa para alinhar expectativas. Ativos como a quitosana ou medicamentos como o orlistate atuam reduzindo a absorção da gordura ingerida — daí os efeitos intestinais conhecidos. O Morosil trabalha por outra via: modula o armazenamento e estimula o uso da gordura **já estocada** como combustível. Por isso ele não costuma \"soltar o intestino\", e por isso o exercício físico é parte do mecanismo, não um acessório — é a atividade que consome a gordura mobilizada. Entenda mais em [como diminuir a gordura abdominal](https://medicinalnaweb.com.br/posts/saiba-como-diminuir-a-gordura-abdominal-de-uma-vez-por-todas).\n\nE o apetite? O Morosil **não é um supressor de fome**. Alguns usuários relatam menos vontade de beliscar, possivelmente ligada ao melhor equilíbrio metabólico, mas esse não é seu mecanismo principal. Quem busca saciedade costuma avaliar outros ativos, como fibras — falamos disso no comparativo mais adiante.\n\n## Evidências e estudos clínicos do Morosil\n\nO Morosil tem três ensaios clínicos randomizados e controlados por placebo publicados — uma base pequena, mas acima da média dos suplementos para gerenciamento de peso, que raramente têm sequer um.\n\n**Cardile et al. (2015)** — o estudo de referência. 60 adultos com sobrepeso receberam 400 mg/dia de Morosil ou placebo por 12 semanas. O grupo suplementado apresentou redução estatisticamente significativa (p<0,05) de peso corporal, IMC e circunferências de cintura e quadril em relação ao placebo.\n\n**Briskey et al. (2022)** — replicação independente, na Austrália. Ensaio randomizado, duplo-cego e controlado por placebo, com adultos de 20 a 65 anos com sobrepeso, ao longo de 6 meses, usando absorciometria (DXA) para medir composição corporal. Confirmou perda de peso e redução de medidas superiores ao placebo, com efeito sobre massa gorda.\n\n**Kegele et al. (2019)** — ensaio brasileiro com extrato seco de laranja Moro em duas doses diárias, completando o trio Itália–Austrália–Brasil citado nas revisões da literatura.\n\nAntes deles, **Titta et al. (2009)** já havia mostrado, em camundongos, que o suco da laranja Moro inibia o acúmulo de gordura mesmo com maior ingestão calórica — o achado pré-clínico que motivou os estudos em humanos.\n\nA leitura honesta: os resultados são consistentes entre si e apontam na mesma direção, mas o conjunto ainda é pequeno, com amostras modestas. É evidência **boa para um coadjuvante** — não para um tratamento. Em todos os estudos, os participantes mantinham orientação alimentar e atividade física.\n\n## Morosil é enganação?\n\nNão — o Morosil não é enganação. É um dos poucos ativos da categoria com ensaios clínicos randomizados e controlados publicados, conduzidos em três países, com resultados consistentes de redução de peso e medidas.\n\n**Enganação é o que parte do marketing faz com ele.** Promessas como \"perca X quilos em N semanas sem dieta\" não têm respaldo em nenhum dos estudos — todos avaliaram o extrato como parte de uma rotina com alimentação orientada e movimento. Quem compra esperando efeito sozinho provavelmente vai se frustrar e concluir, injustamente, que \"não funciona\".\n\nOs sinais de alerta para identificar oferta desonesta: promessa de quilos definidos, \"antes e depois\" milagroso, ausência de procedência da matéria-prima e a versão injetável (que tratamos na seção de cuidados). O Morosil funciona dentro do que a ciência descreve: um empurrão mensurável, não um milagre.\n\n## Morosil: como tomar\n\nA posologia usual do Morosil é de **400 mg a 500 mg por dia, em dose única, por via oral** — a faixa usada nos estudos clínicos foi de 400 mg/dia. Pode ser tomado com ou sem alimentos; em pessoas com estômago sensível, tomar junto a uma refeição tende a melhorar a tolerância.\n\nSobre o horário: não há evidência de superioridade de um período específico. O mais importante é a **constância** — escolher um horário fixo ajuda a não esquecer. O Morosil não contém cafeína nem estimulantes, então não costuma interferir no sono.\n\nSobre a duração: os estudos avaliaram o uso por **12 semanas a 6 meses**. Na prática, considera-se um ciclo mínimo de 8 a 12 semanas antes de avaliar resultados — sempre medindo circunferências e composição corporal, não só o ponteiro da balança.\n\nCápsulas ou pó? O efeito depende da dose do extrato, não da forma. A vantagem da manipulação é justamente ajustar **dose, forma farmacêutica e combinações** (com outros ativos, quando fizer sentido) à prescrição individual. A definição de dose, duração e eventuais associações deve partir de médico ou nutricionista, conforme o objetivo e o contexto de cada pessoa.\n\n## Morosil: contraindicações, efeitos colaterais e cuidados\n\nO Morosil é bem tolerado pela maioria das pessoas nas doses estudadas, mas há situações que pedem atenção — e é exatamente essa informação que falta na maior parte das páginas sobre o ativo.\n\n**Contraindicações.** Hipersensibilidade ou alergia a frutas cítricas é a contraindicação direta. Na **gestação e lactação**, os dados de segurança são limitados: o uso só deve ocorrer com orientação médica expressa.\n\n**Efeitos colaterais possíveis.** Os relatos mais comuns são leves e gastrointestinais: desconforto gástrico, principalmente em quem tem gastrite, úlcera ou refluxo — nestes casos, tomar com alimento ajuda. **Diarreia não é um efeito típico**: o Morosil não age no intestino como bloqueadores de gordura. Também não há evidência de que prejudique o fígado nas doses usuais — ao contrário, estudos pré-clínicos sugerem efeito protetor sobre o acúmulo de gordura hepática, ainda em investigação.\n\n**Interações.** Compostos cítricos podem interferir em enzimas hepáticas (família CYP) que metabolizam diversos medicamentos, e há atenção teórica com **hipoglicemiantes**. Quem usa medicação contínua deve informar o prescritor antes de iniciar.\n\n**Sobre o Morosil injetável.** Existe no mercado um uso injetável do ativo, sem aprovação da ANVISA para essa via — os estudos clínicos que sustentam o Morosil foram todos conduzidos com a **via oral**. A Medicinal trabalha exclusivamente com a forma oral manipulada, que é a forma estudada e regularizada. Desconfie de ofertas de \"Morosil booster injetável\": além do risco regulatório, não há evidência publicada para essa aplicação.\n\n## Morosil ou outros emagrecedores: comparativo\n\nA pergunta certa não é \"qual é o melhor?\", e sim **\"qual resolve o meu caso?\"** — cada ativo desta categoria atua num alvo diferente, e é por isso que muitas vezes aparecem combinados em formulações manipuladas. Comparando o Morosil com os ativos mais buscados junto a ele:\n\n**Morosil vs Dimpless** — alvos diferentes. O Dimpless é uma superóxido dismutase extraída do melão, estudada para a aparência da **celulite**; o Morosil mira **gordura corporal e medidas**. Não competem: tratam queixas distintas e podem coexistir num plano.\n\n**Morosil vs Cactin** — o Cactin, extraído do cacto *Opuntia ficus-indica*, atua sobre **retenção de líquidos e drenagem** — explicamos em detalhe em [como o Cactin age na drenagem linfática](https://medicinalnaweb.com.br/posts/como-cactin-pode-ajudar-na-drenagem-linfatica-e-circulacao). Quem desincha com Cactin não perdeu gordura; quem usa Morosil não trata retenção. A confusão entre \"desinchar\" e \"emagrecer\" explica boa parte das frustrações com ambos.\n\n**Morosil vs Picolinato de cromo** — o cromo participa do metabolismo da **glicose** e é estudado para compulsão por doces. Perfil complementar: um age no estoque de gordura, outro no comportamento alimentar ligado ao açúcar.\n\n**Morosil vs Okralin** — o Okralin, derivado do quiabo, atua na **redução da absorção de gorduras da refeição** (daí seus efeitos intestinais possíveis). O Morosil age na gordura já armazenada — mecanismos opostos no tempo: um no prato, outro no estoque.\n\n**Morosil vs Ioimbina e Berberina** — a ioimbina é estimulante, com cautelas cardiovasculares e de sono; a berberina atua no metabolismo glicêmico via AMPK. Ambas têm perfis de precaução mais delicados que o do Morosil, que não é estimulante.\n\n**E as combinações?** \"Morosil com colágeno\", \"Morosil com Cactin\" e similares são buscas frequentes — e tecnicamente viáveis, já que os mecanismos não conflitam. Há inclusive interesse crescente em associá-lo a tratamentos prescritos, como mostramos no artigo sobre [tirzepatida e Morosil](https://medicinalnaweb.com.br/posts/tirzepatida-como-funciona-e-como-o-morosil-pode-potencializar-seus-resultados). A vantagem de manipular é exatamente compor a fórmula que o seu prescritor definir, em vez de empilhar potes industrializados.\n\n## Por que manipular o Morosil na Medicinal?\n\nQuem pesquisa **Morosil manipulado** geralmente quer saber duas coisas: se é original e se é confiável. A resposta passa pela matéria-prima e pelo processo.\n\n**Matéria-prima certificada e rastreável.** A Medicinal manipula o [Morosil 500 mg](https://medicinalnaweb.com.br/morosil-500mg-60-doses/p) com o extrato padronizado original — fabricado pela italiana Bionap e distribuído no Brasil pela Galena —, com certificado de análise por lote. É o mesmo extrato da laranja Moro siciliana usado nos estudos clínicos, não um \"extrato de laranja moro\" genérico sem padronização.\n\n**Dose sob medida.** O industrializado vem na dose que a marca escolheu. Na manipulação, a cápsula segue a **prescrição**: 400 mg, 500 mg ou o ajuste que o seu profissional definir — inclusive combinando ativos na mesma fórmula quando indicado, como visto no comparativo.\n\n**Formulação limpa.** Cápsulas sem corantes desnecessários, com opções veganas e livres de alergênicos (sem lactose, sem glúten), adequadas a restrições individuais.\n\n**Farmacêutico de verdade no atendimento.** Antes, durante e depois: nossa equipe técnica orienta sobre uso, interações e expectativas realistas — o oposto do balcão anônimo.\n\nManipular não é \"versão alternativa\" do produto: é o mesmo ativo, na dose certa para você, com lastro documental.\n\n## Morosil: o essencial para decidir\n\nO Morosil é um coadjuvante com lastro real: extrato padronizado da laranja Moro, três ensaios clínicos controlados, mecanismo plausível e bom perfil de tolerância. Não promete milagre — entrega um empurrão mensurável a quem já está cuidando da alimentação e do movimento.\n\nSe o seu prescritor indicou o Morosil, manipule com quem trata o ativo com a seriedade que ele merece: matéria-prima certificada, dose sob prescrição e farmacêutico de verdade no atendimento.\n\n---\n\n*Este conteúdo tem caráter informativo e não substitui consulta, diagnóstico ou prescrição por profissional de saúde habilitado. O Morosil é um suplemento alimentar — não é medicamento — e seu uso deve estar associado a alimentação equilibrada e hábitos saudáveis. Resultados variam de pessoa para pessoa. Em caso de dúvidas sobre interações com medicamentos em uso, consulte seu médico ou farmacêutico. Alegações em conformidade com a legislação sanitária vigente (ANVISA).*",
+          "maxWidth": "medium"
+        },
+        "component": "RichContent"
+      },
+      {
+        "id": "lp-references",
+        "props": {
+          "content": "## Referências Científicas\n\n1. Cardile V, Graziano ACE, Venditti A (2015). *Clinical evaluation of Moro (Citrus sinensis (L.) Osbeck) orange juice supplementation for the weight management*. Natural Product Research 29(23):2256-2260. [PubMed](https://pubmed.ncbi.nlm.nih.gov/25559596/)\n\n2. Briskey D, et al. (2022). *Effectiveness of Moro Blood Orange Citrus sinensis Osbeck (Rutaceae) Standardized Extract on Weight Loss in Overweight but Otherwise Healthy Men and Women — A Randomized Double-Blind Placebo-Controlled Study*. Nutrients 14(3):427. [PubMed](https://www.mdpi.com/2072-6643/14/3/427)\n\n3. Kegele et al. (2019). *Ensaio clínico brasileiro com extrato de laranja Moro*. ensaio clínico (Brasil).\n\n4. Titta L, et al. (2009). *Blood orange juice inhibits fat accumulation in mice*. International Journal of Obesity 34(3):578-588.\n\n",
+          "maxWidth": "medium"
+        },
+        "component": "RichContent"
+      },
+      {
+        "id": "lp-faq",
+        "props": {
+          "items": [
+            {
+              "answer": "Não existe número garantido — desconfie de quem promete. Nos estudos clínicos, a redução de peso e medidas apareceu ao longo de 12 semanas a 6 meses de uso contínuo, sempre com dieta e exercício. O ritmo varia conforme o organismo, o déficit calórico e a rotina de cada pessoa.",
+              "question": "Morosil emagrece quantos quilos por semana?"
+            },
+            {
+              "answer": "Não. O Morosil não age no intestino nem bloqueia a absorção de gordura — ele atua sobre a gordura já armazenada. Alterações intestinais não são efeito típico do ativo; se ocorrerem de forma persistente, vale investigar outras causas com um profissional.",
+              "question": "Morosil solta o intestino?"
+            },
+            {
+              "answer": "Sim. O Morosil é um extrato seco e padronizado obtido do suco da laranja vermelha Moro (Citrus sinensis), cultivada na região do vulcão Etna, na Sicília. Ser natural, porém, não dispensa cuidados: dose adequada, procedência da matéria-prima e orientação profissional continuam essenciais.",
+              "question": "Morosil é natural?"
+            },
+            {
+              "answer": "A forma em pó segue a mesma lógica das cápsulas: o que importa é a dose do extrato, geralmente 400 a 500 mg ao dia. O pó costuma ser diluído em água ou suco, conforme a orientação da farmácia. A escolha entre pó e cápsula é de praticidade, não de eficácia.",
+              "question": "Morosil em pó: como tomar?"
+            },
+            {
+              "answer": "Os estudos clínicos disponíveis indicam que sim, como coadjuvante: três ensaios randomizados e controlados mostraram redução significativa de peso, IMC e medidas em relação ao placebo, sempre com alimentação orientada e atividade física. Sozinho, sem mudança de hábitos, o resultado tende a decepcionar.",
+              "question": "Morosil emagrece mesmo?"
+            },
+            {
+              "answer": "Não é essa a sua função principal. O Morosil não é um supressor de apetite — ele atua no metabolismo da gordura armazenada. Algumas pessoas relatam menos vontade de beliscar, mas quem busca saciedade costuma avaliar outros recursos com o prescritor, como fibras.",
+              "question": "Morosil tira a fome?"
+            },
+            {
+              "answer": "Diarreia não é um efeito colateral típico do Morosil, já que ele não interfere na absorção intestinal de gorduras. Os relatos mais comuns são de leve desconforto gástrico em pessoas sensíveis, que costuma melhorar tomando o ativo junto a uma refeição.",
+              "question": "Morosil dá diarreia?"
+            },
+            {
+              "answer": "Sim. É contraindicado para quem tem alergia ou hipersensibilidade a frutas cítricas. Na gravidez e amamentação, os dados de segurança são limitados — use apenas com orientação médica. Quem toma medicamentos contínuos, especialmente hipoglicemiantes, deve informar o prescritor antes de iniciar.",
+              "question": "Morosil tem contraindicação?"
+            },
+            {
+              "answer": "O Morosil é estudado como coadjuvante na redução de peso, IMC e circunferências de cintura e quadril, com foco na gordura abdominal. Soma-se a isso a ação antioxidante das antocianinas da laranja Moro. Os resultados dependem da associação com dieta e atividade física.",
+              "question": "Morosil é bom para quê?"
+            },
+            {
+              "answer": "Não há evidência de dano hepático nas doses usuais de 400 a 500 mg ao dia. Pesquisas pré-clínicas sugerem, ao contrário, possível efeito protetor contra o acúmulo de gordura no fígado — ainda em investigação. Quem tem doença hepática deve, de todo modo, conversar com o médico antes.",
+              "question": "Morosil faz mal para o fígado?"
+            },
+            {
+              "answer": "Não. O Morosil não é termogênico nem estimulante: ele não acelera o metabolismo pela via da temperatura ou da adrenalina. Sua ação descrita é sobre o armazenamento e a mobilização da gordura nos adipócitos, por meio das antocianinas como a cianidina-3-glicosídeo.",
+              "question": "Morosil é termogênico?"
+            },
+            {
+              "answer": "Não há motivo para isso: o Morosil não contém cafeína nem substâncias estimulantes, então não costuma interferir no sono. Pode ser tomado em qualquer horário do dia — o mais importante é manter a regularidade do uso ao longo das semanas.",
+              "question": "Morosil tira o sono?"
+            },
+            {
+              "answer": "Não. O Morosil não atua sobre retenção de líquidos — esse é o território de ativos como o Cactin. A redução de medidas associada ao Morosil nos estudos vem da ação sobre a gordura corporal, não da eliminação de água.",
+              "question": "Morosil é diurético?"
+            },
+            {
+              "answer": "Não. O Morosil é composto apenas pelo extrato padronizado da laranja Moro — antocianinas, flavanonas, ácidos hidroxicinâmicos e vitamina C. Não contém cafeína, sinefrina ou outros estimulantes, o que explica seu bom perfil de tolerância.",
+              "question": "Morosil tem cafeína?"
+            },
+            {
+              "answer": "Em geral, sim — combinações como Morosil com colágeno, Cactin ou picolinato de cromo são comuns e os mecanismos não conflitam. O ideal é que a associação seja definida pelo seu médico ou nutricionista; na manipulação, os ativos podem inclusive compor uma única fórmula.",
+              "question": "Posso tomar Morosil com colágeno ou outros ativos?"
+            }
+          ],
+          "title": "Perguntas Frequentes"
+        },
+        "component": "FAQ"
+      },
+      {
+        "id": "lp-related",
+        "props": {
+          "content": "## Leitura complementar\n\n- [Morosil manipulado 500 mg](https://medicinalnaweb.com.br/morosil-500mg-60-doses/p)\n- [Morosil para emagrecimento: o que você precisa saber](https://medicinalnaweb.com.br/posts/morosil-para-emagrecimento-o-que-voce-precisa-saber)\n- [Tirzepatida: como funciona e como o Morosil pode potencializar seus resultados](https://medicinalnaweb.com.br/posts/tirzepatida-como-funciona-e-como-o-morosil-pode-potencializar-seus-resultados)\n- [Saiba como diminuir a gordura abdominal de uma vez por todas](https://medicinalnaweb.com.br/posts/saiba-como-diminuir-a-gordura-abdominal-de-uma-vez-por-todas)\n- [Como Cactin pode ajudar na drenagem linfática e circulação](https://medicinalnaweb.com.br/posts/como-cactin-pode-ajudar-na-drenagem-linfatica-e-circulacao)\n",
+          "maxWidth": "medium"
+        },
+        "component": "RichContent"
+      },
+      {
+        "id": "lp-cta",
+        "props": {
+          "title": "Quer manipular Morosil com qualidade?",
+          "variant": "primary",
+          "subtitle": "Fale com nosso time de farmacêuticos para uma fórmula sob medida.",
+          "buttonUrl": "https://wa.me/5544984014719",
+          "buttonText": "Falar com um farmacêutico"
+        },
+        "component": "CTA"
+      }
+    ],
+    "metaTitle": "Morosil: o que é, para que serve e o que dizem os estudos | Medicinal",
+    "metaDescription": "Morosil é o extrato da laranja Moro estudado para redução de medidas. Veja para que serve, o que dizem os estudos clínicos, como tomar e onde manipular com segurança.",
+    "ogTitle": "Morosil: o que é, para que serve e o que dizem os estudos",
+    "ogDescription": "O guia evidência-vs-hype do Morosil: origem, mecanismo, estudos clínicos, como tomar e contraindicações.",
+    "ogImageUrl": "https://hsixbybpwvhvkwxeaxup.supabase.co/storage/v1/object/public/blog-images/landing-pages/morosil-hero-1781187531897.png"
+  },
+  {
+    "id": 21,
+    "slug": "sobre",
+    "title": "Sobre",
+    "content": null,
+    "sections": [
+      {
+        "id": "sobre-hero-1",
+        "props": {
+          "size": "medium",
+          "title": "Sobre a Medicinal",
+          "subtitle": "Compromisso com Saude, Beleza e Bem-Estar",
+          "alignment": "center"
+        },
+        "component": "Hero"
+      },
+      {
+        "id": "sobre-missao-2",
+        "props": {
+          "title": "Missao",
+          "content": "<p>Contribuir com a Saude, Beleza e Bem-Estar dos nossos clientes por meio dos nossos servicos e produtos.</p>",
+          "maxWidth": "medium"
+        },
+        "component": "RichContent"
+      },
+      {
+        "id": "sobre-visao-3",
+        "props": {
+          "title": "Visao",
+          "content": "<p>Sempre atender o cliente na plenitude de suas necessidades.</p>",
+          "maxWidth": "medium"
+        },
+        "component": "RichContent"
+      },
+      {
+        "id": "sobre-valores-4",
+        "props": {
+          "title": "Valores",
+          "content": "<h3>Compromisso com o Cliente</h3>\n<p>Acreditamos que cada cliente e unico e merece um atendimento personalizado e atencioso. Estamos dedicados a escutar suas necessidades, oferecer solucoes eficazes e superar suas expectativas em cada interacao.</p>\n\n<h3>Qualidade e Seguranca do Produto</h3>\n<p>A qualidade e a seguranca dos nossos produtos sao inegociaveis. Investimos continuamente em pesquisa, desenvolvimento e controle de qualidade para garantir que cada produto atenda aos mais altos padroes de eficacia e seguranca.</p>\n\n<h3>Inovacao Constante</h3>\n<p>Estamos sempre em busca de novas tecnologias, metodologias e ingredientes que possam melhorar nossos produtos e processos, oferecendo solucoes mais eficazes, seguras e alinhadas as necessidades dos clientes.</p>\n\n<h3>Desenvolvimento Humano</h3>\n<p>Valorizamos o crescimento e a capacitacao dos nossos colaboradores, promovendo um ambiente de trabalho que incentiva a aprendizagem continua, a colaboracao, o bem-estar e o alinhamento com os objetivos da empresa.</p>",
+          "maxWidth": "medium"
+        },
+        "component": "RichContent"
+      },
+      {
+        "id": "sobre-qualidade-5",
+        "props": {
+          "title": "Politica da Qualidade",
+          "content": "<p>A Medicinal compromete-se a garantir a qualidade, seguranca e confiabilidade de seus produtos, servicos e processos, atendendo aos requisitos aplicaveis, promovendo a satisfacao dos clientes, prevenindo falhas e impulsionando a melhoria continua do Sistema de Gestao da Qualidade.</p>",
+          "maxWidth": "medium"
+        },
+        "component": "RichContent"
+      }
+    ],
+    "draftSections": [
+      {
+        "id": "sobre-hero-1",
+        "props": {
+          "size": "medium",
+          "title": "Sobre a Medicinal",
+          "subtitle": "Compromisso com Saude, Beleza e Bem-Estar",
+          "alignment": "center"
+        },
+        "component": "Hero"
+      },
+      {
+        "id": "sobre-missao-2",
+        "props": {
+          "title": "Missao",
+          "content": "<p>Contribuir com a Saude, Beleza e Bem-Estar dos nossos clientes por meio dos nossos servicos e produtos.</p>",
+          "maxWidth": "medium"
+        },
+        "component": "RichContent"
+      },
+      {
+        "id": "sobre-visao-3",
+        "props": {
+          "title": "Visao",
+          "content": "<p>Sempre atender o cliente na plenitude de suas necessidades.</p>",
+          "maxWidth": "medium"
+        },
+        "component": "RichContent"
+      },
+      {
+        "id": "sobre-valores-4",
+        "props": {
+          "title": "Valores",
+          "content": "<h3>Compromisso com o Cliente</h3>\n<p>Acreditamos que cada cliente e unico e merece um atendimento personalizado e atencioso. Estamos dedicados a escutar suas necessidades, oferecer solucoes eficazes e superar suas expectativas em cada interacao.</p>\n\n<h3>Qualidade e Seguranca do Produto</h3>\n<p>A qualidade e a seguranca dos nossos produtos sao inegociaveis. Investimos continuamente em pesquisa, desenvolvimento e controle de qualidade para garantir que cada produto atenda aos mais altos padroes de eficacia e seguranca.</p>\n\n<h3>Inovacao Constante</h3>\n<p>Estamos sempre em busca de novas tecnologias, metodologias e ingredientes que possam melhorar nossos produtos e processos, oferecendo solucoes mais eficazes, seguras e alinhadas as necessidades dos clientes.</p>\n\n<h3>Desenvolvimento Humano</h3>\n<p>Valorizamos o crescimento e a capacitacao dos nossos colaboradores, promovendo um ambiente de trabalho que incentiva a aprendizagem continua, a colaboracao, o bem-estar e o alinhamento com os objetivos da empresa.</p>",
+          "maxWidth": "medium"
+        },
+        "component": "RichContent"
+      },
+      {
+        "id": "sobre-qualidade-5",
+        "props": {
+          "title": "Politica da Qualidade",
+          "content": "<p>A Medicinal compromete-se a garantir a qualidade, seguranca e confiabilidade de seus produtos, servicos e processos, atendendo aos requisitos aplicaveis, promovendo a satisfacao dos clientes, prevenindo falhas e impulsionando a melhoria continua do Sistema de Gestao da Qualidade.</p>",
+          "maxWidth": "medium"
+        },
+        "component": "RichContent"
+      }
+    ],
+    "metaTitle": "Sobre a Medicinal | Missao, Visao e Valores",
+    "metaDescription": "Conheca a missao, visao, valores e politica de qualidade da Medicinal. Compromisso com saude, beleza e bem-estar.",
+    "ogTitle": null,
+    "ogDescription": null,
+    "ogImageUrl": null
+  },
+  {
+    "id": 23,
+    "slug": "campanhas/maca-peruana",
+    "title": "Maca Peruana",
+    "content": null,
+    "sections": [
+      {
+        "id": "lp-hero",
+        "props": {
+          "cta": {
+            "href": "https://wa.me/5544984014719",
+            "label": "Manipular maca peruana"
+          },
+          "dark": true,
+          "size": "large",
+          "align": "centro",
+          "title": "Maca Peruana",
+          "subtitle": "A maca peruana (Lepidium meyenii) é um adaptógeno andino usado para energia, libido, fertilidade e sintomas da menopausa — com efeito independente de hormônios.",
+          "backgroundImage": "https://hsixbybpwvhvkwxeaxup.supabase.co/storage/v1/object/public/blog-images/landing-pages/maca-peruana-hero-1781967558465.png"
+        },
+        "component": "Hero"
+      },
+      {
+        "id": "lp-takeaways",
+        "props": {
+          "title": "Em resumo",
+          "columns": 2,
+          "features": [
+            {
+              "icon": "check",
+              "title": "",
+              "description": "A maca peruana é um adaptógeno: apoia energia, humor e libido sem ser um estimulante como a cafeína."
+            },
+            {
+              "icon": "check",
+              "title": "",
+              "description": "Tem bom respaldo científico (nível B) para libido, sintomas da menopausa e fertilidade masculina."
+            },
+            {
+              "icon": "check",
+              "title": "",
+              "description": "Não eleva testosterona nem estrogênio — o efeito sobre a libido é independente de hormônios."
+            },
+            {
+              "icon": "check",
+              "title": "",
+              "description": "Não é um emagrecedor; a dose usual é de 1,5 g a 3 g por dia, em pó ou cápsulas."
+            }
+          ]
+        },
+        "component": "Features"
+      },
+      {
+        "id": "lp-content",
+        "props": {
+          "content": "A **maca peruana** (*Lepidium meyenii*) é uma raiz andina usada como adaptógeno natural — ou seja, ajuda o corpo a lidar com o estresse físico e mental. É procurada principalmente para **energia, libido, fertilidade e sintomas da menopausa**. Diferente do que muito site repete, seu efeito sobre o desejo sexual **não depende de alterar hormônios**.\n\n## Em resumo\n\n- A maca peruana é um **adaptógeno**: atua na resposta ao estresse e na energia, sem ser um estimulante como a cafeína.\n- Tem **bom respaldo científico** para **libido** (homens e mulheres) e **sintomas da menopausa**, e evidência crescente para **fertilidade masculina**.\n- **Não eleva testosterona nem estrogênio** — o efeito na libido é independente de hormônios.\n- **Não é um emagrecedor**: não há estudo clínico robusto sustentando perda de peso.\n- Dose usual: **1,5 g a 3 g por dia**, na forma de pó ou cápsulas.\n\n## O que é a maca peruana?\n\nA maca peruana é a **raiz comestível** de *Lepidium meyenii*, uma planta da família das crucíferas (a mesma do brócolis e da couve) cultivada há mais de 2.000 anos nos Andes peruanos, em altitudes acima de 4.000 metros. Por lei, ela só pode ser processada no Peru, chegando ao Brasil como **pó (farinha) ou cápsulas**.\n\nO que torna a maca singular são seus compostos bioativos próprios: as **macamidas e macaenos** (marcadores exclusivos da planta), além de glucosinolatos, esteróis, flavonoides e polissacarídeos. É por isso que ela é classificada como **alimento funcional** e **adaptógeno** — vai além do valor nutricional (carboidratos, fibras, vitamina C, ferro, zinco) e oferece ação fisiológica sobre energia, humor e função sexual.\n\n## Variedades: amarela, vermelha e preta (negra)\n\nA cor da maca não é só estética — reflete diferenças no perfil de compostos e nas aplicações mais estudadas de cada variedade:\n\n- **Maca amarela:** a mais comum e a mais estudada. Indicada para **uso geral** — energia, disposição e equilíbrio do humor no dia a dia.\n- **Maca vermelha:** a mais rica em antioxidantes. Associada ao **suporte à saúde da próstata** e ao bem-estar ósseo.\n- **Maca preta (ou negra):** considerada a mais potente. É a variedade com efeito mais pronunciado sobre a **libido masculina, a fertilidade (parâmetros do sêmen) e a memória/concentração**.\n\nNa prática, a escolha depende do objetivo. Para um efeito amplo e versátil, a amarela costuma ser o ponto de partida; para foco em desempenho sexual masculino e cognição, a preta tende a ser preferida.\n\n## Como a maca peruana age no corpo\n\nA maca age como **adaptógeno**: em vez de forçar uma via única, ela ajuda a modular o **eixo hipotálamo-hipófise-adrenal**, o sistema que regula a resposta do corpo ao estresse. Esse é o mecanismo por trás dos relatos de mais energia e melhor disposição, sem o \"pico e queda\" típico de estimulantes.\n\nO ponto mais importante — e o que a maioria dos sites erra — é o seguinte: **a maca não funciona alterando seus hormônios**. Estudos que mediram testosterona, LH, FSH e estradiol no sangue mostraram que esses níveis **não se alteram** com o uso da maca, mesmo quando a libido melhora. O efeito sobre o desejo sexual é atribuído a uma **ação central**, ligada à modulação de neurotransmissores e do **sistema endocanabinoide** (as macamidas inibem a FAAH, enzima que degrada a anandamida, a chamada \"molécula do bem-estar\").\n\nPor isso a frase \"maca aumenta a testosterona\" é **imprecisa**: ela pode melhorar sintomas ligados à vitalidade e à função sexual **sem** ser um hormônio nem um precursor hormonal — o que, inclusive, faz parte do seu bom perfil de segurança.\n\n## Benefícios da maca peruana para mulheres e para homens\n\nA maca é um dos poucos ativos com benefícios estudados para **ambos os sexos**, sempre ligados à vitalidade, ao humor e à função sexual — e não à perda de peso, onde a evidência é fraca.\n\n**Para mulheres**, o uso mais respaldado é no **alívio de sintomas da menopausa e do climatério**: estudos apontam melhora em desconforto psicológico (humor, ansiedade leve, sintomas depressivos) e na satisfação sexual de mulheres na pós-menopausa, sem mexer nos níveis hormonais — o que a torna uma opção de interesse para quem busca alternativas não-hormonais. Também é procurada para **libido e disposição** ao longo do ciclo da vida.\n\n**Para homens**, há duas frentes principais: **libido/desejo sexual** e **fertilidade**. Pesquisas mostram aumento do desejo sexual e melhora em parâmetros do sêmen (volume, concentração e motilidade), com sinais positivos também em casos de disfunção erétil leve. A variedade **preta (negra)** é a mais associada a esses efeitos masculinos.\n\nPara ambos, o denominador comum é a ação **adaptógena e energizante** — mais disposição física e mental, especialmente em períodos de cansaço e estresse.\n\n## O que dizem os estudos sobre a maca peruana\n\nA maca tem **bom respaldo científico para libido e sintomas da menopausa**, com evidência classificada como **moderada (nível B)** — promissora, mas ainda construída sobre estudos em sua maioria pequenos e de curta duração. É honesto dizer: há ciência por trás, mas não se trata de um tratamento definitivo.\n\nOs achados mais consistentes vêm de revisões e ensaios clínicos randomizados (RCTs):\n\n- **Shin et al. (2010)**, revisão sistemática de 4 RCTs, encontrou evidência preliminar favorável da maca para **melhora da função sexual**.\n- **Lee et al. (2011)**, revisão sistemática focada em **menopausa**, reuniu RCTs com resultados favoráveis sobre sintomas climatéricos.\n- **Lee et al. (2022)**, **meta-análise** mais recente, reforçou o lastro de evidência para **qualidade do sêmen / fertilidade masculina**.\n- **Gonzales et al. (2002)** e **Brooks et al. (2008)**, dois RCTs clássicos, demonstraram melhora no desejo sexual (em homens) e nos sintomas psicológicos e sexuais (em mulheres pós-menopausa) **sem qualquer alteração nos hormônios séricos**.\n\n## Maca peruana tira o sono?\n\n**A maca peruana não costuma \"tirar o sono\" da mesma forma que o café**, porque não é um estimulante e **não contém cafeína**. Ela é um adaptógeno energizante, e não um excitante do sistema nervoso central.\n\nO que acontece é o seguinte: por melhorar a disposição e a energia, algumas pessoas mais sensíveis relatam sentir-se \"ligadas\" se tomam a maca **muito perto da hora de dormir**. A solução prática é simples — concentrar o consumo na **manhã ou no início da tarde**. Tomada nesse horário, a maca tende a favorecer a energia ao longo do dia sem atrapalhar o sono à noite.\n\n## Como tomar maca peruana (pó ou cápsula)\n\nA dose usual da maca peruana fica entre **1,5 g e 3 g por dia**, e ela pode ser consumida de duas formas principais, com a mesma eficácia quando a dose é equivalente:\n\n- **Em pó:** 1 a 3 colheres de chá por dia, diluídas em sucos, smoothies, vitaminas, iogurte ou mingau. É a forma mais versátil e econômica, mas tem sabor terroso característico.\n- **Em cápsulas:** prática e com **dose padronizada**, ideal para quem não gosta do sabor ou quer praticidade e controle exato da quantidade.\n\nVale procurar a versão **gelatinizada** — um pré-cozimento que rompe o amido da raiz, **melhora a digestibilidade** e reduz desconforto abdominal, sendo mais bem tolerada por estômagos sensíveis.\n\nSobre o **horário**: prefira a manhã ou o início da tarde, pelo efeito energizante. E, principalmente, **consistência**: os benefícios da maca aparecem com o uso contínuo ao longo de **algumas semanas**, não em doses isoladas. O acompanhamento de um profissional ajuda a ajustar dose e forma ao seu objetivo.\n\n## Efeitos colaterais e contraindicações da maca peruana\n\nEm doses usuais, a maca peruana é **geralmente bem tolerada**. O efeito adverso mais comum é **desconforto gastrointestinal leve** (gases, sensação de inchaço), mais frequente com o pó não-gelatinizado e que costuma melhorar com a versão gelatinizada ou ajuste de dose.\n\nAinda assim, há situações que exigem **cautela e orientação profissional** antes do uso:\n\n- **Distúrbios da tireoide:** a maca contém glucosinolatos (compostos goitrogênicos); o efeito é reduzido pela gelatinização, mas o uso prolongado pede acompanhamento.\n- **Hipertensão não controlada:** há relatos de leve elevação da pressão com doses altas — monitorar.\n- **Câncer hormônio-dependente** (mama, útero, ovário, próstata): embora a maca **não tenha ação estrogênica direta**, recomenda-se usá-la apenas com orientação médica.\n- **Gestação e lactação:** dados limitados — melhor evitar.\n- **Doenças autoimunes** e **hipersensibilidade a crucíferas:** cautela.\n\n**Interações** a observar: anti-hipertensivos (monitorar pressão), medicamentos da tireoide (levotiroxina), terapia hormonal e estimulantes (efeito energizante somado). Na dúvida, a conversa com farmacêutico ou médico é o caminho mais seguro.\n\n## Maca peruana com tribulus terrestris e outras combinações\n\nA combinação mais buscada é **maca peruana com tribulus terrestris** — e ela faz sentido conceitual, porque os dois atuam por caminhos diferentes e complementares. A maca é um **adaptógeno de ação central e não-hormonal** (energia, humor, libido); o [tribulus terrestris](https://medicinalnaweb.com.br/posts/tribulus-terrestris-para-que-serve) é tradicionalmente usado para **vitalidade e desempenho sexual**. Juntos, são populares como suporte à libido e à disposição, embora a evidência da **dupla especificamente** ainda seja limitada — cada ativo é mais estudado isoladamente do que em conjunto.\n\nOutras associações frequentes:\n\n- **Maca + ashwagandha:** ambos adaptógenos; a ashwagandha é mais voltada ao **manejo do estresse e do cortisol**, complementando o lado energético da maca.\n- **Maca + moringa:** combinação de perfil mais **nutricional**, somando vitaminas e minerais.\n\nA vantagem de uma combinação **manipulada** é justamente poder ajustar as doses de cada ativo a um só produto, com orientação profissional — algo que blends industrializados de fórmula fixa não permitem.\n\n## Por que manipular a maca peruana na Medicinal\n\nNem toda maca peruana é igual — e isso é mais do que marketing. Pesquisas brasileiras já identificaram **adulteração de maca em pó com farelo de arroz**, o que reduz (ou zera) o ativo real do produto. Por isso, **procedência e controle de qualidade** são o que separam um suplemento eficaz de um pó sem efeito.\n\nAo manipular a maca peruana na **Medicinal Farmácia de Manipulação**, você tem:\n\n- **Matéria-prima de procedência rastreável**, com controle de qualidade — proteção direta contra adulteração.\n- **Dose customizada** (de 1,5 g a 3 g, ou conforme orientação), ajustada ao seu objetivo, em vez da dose fixa do industrializado.\n- **Cápsulas sob medida**, podendo ser **veganas e livres de lactose e glúten**.\n- Possibilidade de **associação com outros ativos** (como tribulus) numa única fórmula.\n- **Acompanhamento farmacêutico** do início ao fim.\n\n## Maca peruana com qualidade que você confia\n\nA maca peruana é um adaptógeno versátil, com **respaldo real para libido, sintomas da menopausa e fertilidade masculina** — desde que seja de **boa procedência** e usada com consistência. Não é um emagrecedor nem um hormônio: é um suporte natural à energia e à vitalidade, com bom perfil de segurança quando bem orientado.\n\nSe você quer maca peruana com **dose certa, matéria-prima rastreável e acompanhamento farmacêutico**, a manipulação é o caminho mais seguro.\n\n## Aviso importante\n\nEste conteúdo tem caráter **informativo e educativo** e não substitui a avaliação de um médico ou farmacêutico. A maca peruana é um **alimento funcional / suplemento coadjuvante** — não trata, cura nem previne doenças. Os resultados variam conforme o organismo, a dose e a consistência de uso. Antes de iniciar qualquer suplementação, **consulte um profissional habilitado**, especialmente em caso de doenças preexistentes, uso de medicamentos, gestação ou amamentação.",
+          "maxWidth": "medium"
+        },
+        "component": "RichContent"
+      },
+      {
+        "id": "lp-references",
+        "props": {
+          "content": "## Referências Científicas\n\n1. Lee HW et al. (2022). *Maca (Lepidium meyenii Walp.) on semen quality parameters: a systematic review and meta-analysis*. Frontiers in Pharmacology. [PubMed](https://pubmed.ncbi.nlm.nih.gov/36110519/)\n\n2. Lee MS et al. (2011). *Maca (Lepidium meyenii) for treatment of menopausal symptoms: a systematic review*. Maturitas. [PubMed](https://pubmed.ncbi.nlm.nih.gov/21840656/)\n\n3. Shin BC et al. (2010). *Maca (L. meyenii) for improving sexual function: a systematic review*. BMC Complementary and Alternative Medicine. [PubMed](https://pubmed.ncbi.nlm.nih.gov/20691074/)\n\n4. Zenico T et al. (2009). *Subjective effects of Lepidium meyenii (Maca) extract on well-being and sexual performances in patients with mild erectile dysfunction*. Andrologia. [PubMed](https://pubmed.ncbi.nlm.nih.gov/19260845/)\n\n5. Brooks NA et al. (2008). *Beneficial effects of Lepidium meyenii (Maca) on psychological symptoms and measures of sexual dysfunction in postmenopausal women are not related to estrogen or androgen content*. Menopause. [PubMed](https://pubmed.ncbi.nlm.nih.gov/18784609/)\n\n6. Gonzales GF et al. (2002). *Effect of Lepidium meyenii (MACA) on sexual desire and its absent relationship with serum testosterone levels in adult healthy men*. Andrologia. [PubMed](https://pubmed.ncbi.nlm.nih.gov/12472620/)\n\n7. Gonzales GF et al. (2001). *Lepidium meyenii (Maca) improved semen parameters in adult men*. Asian Journal of Andrology. [PubMed](https://pubmed.ncbi.nlm.nih.gov/11753476/)\n\n8. Gonzales GF (2012). *Ethnobiology and Ethnopharmacology of Lepidium meyenii (Maca), a Plant from the Peruvian Highlands*. Evidence-Based Complementary and Alternative Medicine. [PubMed](https://pubmed.ncbi.nlm.nih.gov/21977053/)\n\n",
+          "maxWidth": "medium"
+        },
+        "component": "RichContent"
+      },
+      {
+        "id": "lp-faq",
+        "props": {
+          "items": [
+            {
+              "answer": "Serve principalmente como adaptógeno: apoio à energia, ao humor e à libido. Tem respaldo científico para desejo sexual (homens e mulheres), sintomas da menopausa e fertilidade masculina. Não é emagrecedor nem hormônio.",
+              "question": "Para que serve a maca peruana?"
+            },
+            {
+              "answer": "Depende do objetivo. A amarela é a mais versátil (uso geral, energia); a vermelha tem foco antioxidante e prostático; a preta (negra) é a mais potente para libido masculina e cognição.",
+              "question": "Qual a melhor maca peruana?"
+            },
+            {
+              "answer": "A preta (negra) costuma ser a preferida para o público masculino, por ter o efeito mais pronunciado sobre libido, fertilidade (parâmetros do sêmen) e memória/concentração.",
+              "question": "Qual a melhor maca peruana para o homem?"
+            },
+            {
+              "answer": "A amarela é a mais indicada para uso geral e bem-estar; para sintomas da menopausa, é a variedade com mais estudos favoráveis. A escolha ideal deve considerar seu objetivo com orientação profissional.",
+              "question": "Qual a melhor maca peruana para mulher?"
+            },
+            {
+              "answer": "Use 1 a 3 colheres de chá por dia (cerca de 1,5 g a 3 g), diluídas em sucos, smoothies, iogurte ou mingau. Prefira a versão gelatinizada, mais digestível, e tome de manhã ou no início da tarde.",
+              "question": "Como tomar maca peruana em pó?"
+            },
+            {
+              "answer": "Em cápsulas, siga a dose orientada para atingir 1,5 g a 3 g ao dia (por exemplo, cápsulas de 500 mg somando a dose total). A cápsula oferece dose padronizada e evita o sabor terroso do pó.",
+              "question": "Como tomar maca peruana em cápsula (500mg)?"
+            },
+            {
+              "answer": "De manhã ou no início da tarde, por causa do efeito energizante. Tomar muito perto de dormir pode deixar pessoas sensíveis mais ligadas.",
+              "question": "Qual o melhor horário para tomar maca peruana?"
+            },
+            {
+              "answer": "Geralmente não, porque não é estimulante e não contém cafeína. Quem é mais sensível pode sentir-se agitado se tomar à noite; nesse caso, basta concentrar o uso na parte da manhã.",
+              "question": "Maca peruana tira o sono?"
+            },
+            {
+              "answer": "Não há evidência clínica robusta de que a maca, sozinha, faça perder peso. Ela pode aumentar a disposição para atividades físicas, mas não deve ser usada como emagrecedor.",
+              "question": "Maca peruana emagrece?"
+            },
+            {
+              "answer": "Não. Estudos mostram que a maca melhora a libido sem elevar testosterona, LH, FSH ou estrogênio. O efeito é independente de hormônios, por ação central.",
+              "question": "Maca peruana aumenta a testosterona?"
+            },
+            {
+              "answer": "Não há evidência de que a maca cause ganho de peso por si só. Seu valor calórico em doses de suplementação é baixo.",
+              "question": "Maca peruana engorda?"
+            },
+            {
+              "answer": "Os benefícios aparecem com uso contínuo, geralmente ao longo de algumas semanas. A consistência é mais importante do que a dose isolada.",
+              "question": "Quanto tempo a maca peruana leva para fazer efeito?"
+            },
+            {
+              "answer": "Sim, é uma combinação popular para libido e vitalidade, com ativos de ação complementar. A evidência da dupla específica ainda é limitada; o ideal é ajustar as doses com orientação profissional.",
+              "question": "Maca peruana e tribulus podem ser tomados juntos?"
+            },
+            {
+              "answer": "Em doses usuais é bem tolerada; o efeito mais comum é desconforto gastrointestinal leve. Exige cautela em distúrbios da tireoide, hipertensão não controlada, câncer hormônio-dependente, gestação e amamentação.",
+              "question": "Maca peruana faz mal?"
+            }
+          ],
+          "title": "Perguntas Frequentes"
+        },
+        "component": "FAQ"
+      },
+      {
+        "id": "lp-related",
+        "props": {
+          "content": "## Leitura complementar\n\n- [Maca peruana, afrodisíaco natural](https://medicinalnaweb.com.br/posts/maca-peruana-afrodisiaco-natural)\n- [Maca Peruana: sua origem e benefícios](https://medicinalnaweb.com.br/posts/maca-peruana-sua-origem-e-beneficios)\n- [9 benefícios da maca peruana para a saúde](https://medicinalnaweb.com.br/posts/9-beneficios-da-maca-peruana-para-a-saude-que-voce-nao-sabia)\n- [Tribulus Terrestris: para que serve](https://medicinalnaweb.com.br/posts/tribulus-terrestris-para-que-serve)\n- [Sintomas da menopausa: o que esperar](https://medicinalnaweb.com.br/posts/sintomas-da-menopausa-o-que-esperar-idade-e-duracao)\n",
+          "maxWidth": "medium"
+        },
+        "component": "RichContent"
+      },
+      {
+        "id": "lp-cta",
+        "props": {
+          "title": "Quer manipular Maca Peruana com qualidade?",
+          "variant": "primary",
+          "subtitle": "Fale com nosso time de farmacêuticos para uma fórmula sob medida.",
+          "buttonUrl": "https://wa.me/5544984014719",
+          "buttonText": "Falar com um farmacêutico"
+        },
+        "component": "CTA"
+      }
+    ],
+    "draftSections": [
+      {
+        "id": "lp-hero",
+        "props": {
+          "cta": {
+            "href": "https://wa.me/5544984014719",
+            "label": "Manipular maca peruana"
+          },
+          "dark": true,
+          "size": "large",
+          "align": "centro",
+          "title": "Maca Peruana",
+          "subtitle": "A maca peruana (Lepidium meyenii) é um adaptógeno andino usado para energia, libido, fertilidade e sintomas da menopausa — com efeito independente de hormônios.",
+          "backgroundImage": "https://hsixbybpwvhvkwxeaxup.supabase.co/storage/v1/object/public/blog-images/landing-pages/maca-peruana-hero-1781967558465.png"
+        },
+        "component": "Hero"
+      },
+      {
+        "id": "lp-takeaways",
+        "props": {
+          "title": "Em resumo",
+          "columns": 2,
+          "features": [
+            {
+              "icon": "check",
+              "title": "",
+              "description": "A maca peruana é um adaptógeno: apoia energia, humor e libido sem ser um estimulante como a cafeína."
+            },
+            {
+              "icon": "check",
+              "title": "",
+              "description": "Tem bom respaldo científico (nível B) para libido, sintomas da menopausa e fertilidade masculina."
+            },
+            {
+              "icon": "check",
+              "title": "",
+              "description": "Não eleva testosterona nem estrogênio — o efeito sobre a libido é independente de hormônios."
+            },
+            {
+              "icon": "check",
+              "title": "",
+              "description": "Não é um emagrecedor; a dose usual é de 1,5 g a 3 g por dia, em pó ou cápsulas."
+            }
+          ]
+        },
+        "component": "Features"
+      },
+      {
+        "id": "lp-content",
+        "props": {
+          "content": "A **maca peruana** (*Lepidium meyenii*) é uma raiz andina usada como adaptógeno natural — ou seja, ajuda o corpo a lidar com o estresse físico e mental. É procurada principalmente para **energia, libido, fertilidade e sintomas da menopausa**. Diferente do que muito site repete, seu efeito sobre o desejo sexual **não depende de alterar hormônios**.\n\n## Em resumo\n\n- A maca peruana é um **adaptógeno**: atua na resposta ao estresse e na energia, sem ser um estimulante como a cafeína.\n- Tem **bom respaldo científico** para **libido** (homens e mulheres) e **sintomas da menopausa**, e evidência crescente para **fertilidade masculina**.\n- **Não eleva testosterona nem estrogênio** — o efeito na libido é independente de hormônios.\n- **Não é um emagrecedor**: não há estudo clínico robusto sustentando perda de peso.\n- Dose usual: **1,5 g a 3 g por dia**, na forma de pó ou cápsulas.\n\n## O que é a maca peruana?\n\nA maca peruana é a **raiz comestível** de *Lepidium meyenii*, uma planta da família das crucíferas (a mesma do brócolis e da couve) cultivada há mais de 2.000 anos nos Andes peruanos, em altitudes acima de 4.000 metros. Por lei, ela só pode ser processada no Peru, chegando ao Brasil como **pó (farinha) ou cápsulas**.\n\nO que torna a maca singular são seus compostos bioativos próprios: as **macamidas e macaenos** (marcadores exclusivos da planta), além de glucosinolatos, esteróis, flavonoides e polissacarídeos. É por isso que ela é classificada como **alimento funcional** e **adaptógeno** — vai além do valor nutricional (carboidratos, fibras, vitamina C, ferro, zinco) e oferece ação fisiológica sobre energia, humor e função sexual.\n\n## Variedades: amarela, vermelha e preta (negra)\n\nA cor da maca não é só estética — reflete diferenças no perfil de compostos e nas aplicações mais estudadas de cada variedade:\n\n- **Maca amarela:** a mais comum e a mais estudada. Indicada para **uso geral** — energia, disposição e equilíbrio do humor no dia a dia.\n- **Maca vermelha:** a mais rica em antioxidantes. Associada ao **suporte à saúde da próstata** e ao bem-estar ósseo.\n- **Maca preta (ou negra):** considerada a mais potente. É a variedade com efeito mais pronunciado sobre a **libido masculina, a fertilidade (parâmetros do sêmen) e a memória/concentração**.\n\nNa prática, a escolha depende do objetivo. Para um efeito amplo e versátil, a amarela costuma ser o ponto de partida; para foco em desempenho sexual masculino e cognição, a preta tende a ser preferida.\n\n## Como a maca peruana age no corpo\n\nA maca age como **adaptógeno**: em vez de forçar uma via única, ela ajuda a modular o **eixo hipotálamo-hipófise-adrenal**, o sistema que regula a resposta do corpo ao estresse. Esse é o mecanismo por trás dos relatos de mais energia e melhor disposição, sem o \"pico e queda\" típico de estimulantes.\n\nO ponto mais importante — e o que a maioria dos sites erra — é o seguinte: **a maca não funciona alterando seus hormônios**. Estudos que mediram testosterona, LH, FSH e estradiol no sangue mostraram que esses níveis **não se alteram** com o uso da maca, mesmo quando a libido melhora. O efeito sobre o desejo sexual é atribuído a uma **ação central**, ligada à modulação de neurotransmissores e do **sistema endocanabinoide** (as macamidas inibem a FAAH, enzima que degrada a anandamida, a chamada \"molécula do bem-estar\").\n\nPor isso a frase \"maca aumenta a testosterona\" é **imprecisa**: ela pode melhorar sintomas ligados à vitalidade e à função sexual **sem** ser um hormônio nem um precursor hormonal — o que, inclusive, faz parte do seu bom perfil de segurança.\n\n## Benefícios da maca peruana para mulheres e para homens\n\nA maca é um dos poucos ativos com benefícios estudados para **ambos os sexos**, sempre ligados à vitalidade, ao humor e à função sexual — e não à perda de peso, onde a evidência é fraca.\n\n**Para mulheres**, o uso mais respaldado é no **alívio de sintomas da menopausa e do climatério**: estudos apontam melhora em desconforto psicológico (humor, ansiedade leve, sintomas depressivos) e na satisfação sexual de mulheres na pós-menopausa, sem mexer nos níveis hormonais — o que a torna uma opção de interesse para quem busca alternativas não-hormonais. Também é procurada para **libido e disposição** ao longo do ciclo da vida.\n\n**Para homens**, há duas frentes principais: **libido/desejo sexual** e **fertilidade**. Pesquisas mostram aumento do desejo sexual e melhora em parâmetros do sêmen (volume, concentração e motilidade), com sinais positivos também em casos de disfunção erétil leve. A variedade **preta (negra)** é a mais associada a esses efeitos masculinos.\n\nPara ambos, o denominador comum é a ação **adaptógena e energizante** — mais disposição física e mental, especialmente em períodos de cansaço e estresse.\n\n## O que dizem os estudos sobre a maca peruana\n\nA maca tem **bom respaldo científico para libido e sintomas da menopausa**, com evidência classificada como **moderada (nível B)** — promissora, mas ainda construída sobre estudos em sua maioria pequenos e de curta duração. É honesto dizer: há ciência por trás, mas não se trata de um tratamento definitivo.\n\nOs achados mais consistentes vêm de revisões e ensaios clínicos randomizados (RCTs):\n\n- **Shin et al. (2010)**, revisão sistemática de 4 RCTs, encontrou evidência preliminar favorável da maca para **melhora da função sexual**.\n- **Lee et al. (2011)**, revisão sistemática focada em **menopausa**, reuniu RCTs com resultados favoráveis sobre sintomas climatéricos.\n- **Lee et al. (2022)**, **meta-análise** mais recente, reforçou o lastro de evidência para **qualidade do sêmen / fertilidade masculina**.\n- **Gonzales et al. (2002)** e **Brooks et al. (2008)**, dois RCTs clássicos, demonstraram melhora no desejo sexual (em homens) e nos sintomas psicológicos e sexuais (em mulheres pós-menopausa) **sem qualquer alteração nos hormônios séricos**.\n\n## Maca peruana tira o sono?\n\n**A maca peruana não costuma \"tirar o sono\" da mesma forma que o café**, porque não é um estimulante e **não contém cafeína**. Ela é um adaptógeno energizante, e não um excitante do sistema nervoso central.\n\nO que acontece é o seguinte: por melhorar a disposição e a energia, algumas pessoas mais sensíveis relatam sentir-se \"ligadas\" se tomam a maca **muito perto da hora de dormir**. A solução prática é simples — concentrar o consumo na **manhã ou no início da tarde**. Tomada nesse horário, a maca tende a favorecer a energia ao longo do dia sem atrapalhar o sono à noite.\n\n## Como tomar maca peruana (pó ou cápsula)\n\nA dose usual da maca peruana fica entre **1,5 g e 3 g por dia**, e ela pode ser consumida de duas formas principais, com a mesma eficácia quando a dose é equivalente:\n\n- **Em pó:** 1 a 3 colheres de chá por dia, diluídas em sucos, smoothies, vitaminas, iogurte ou mingau. É a forma mais versátil e econômica, mas tem sabor terroso característico.\n- **Em cápsulas:** prática e com **dose padronizada**, ideal para quem não gosta do sabor ou quer praticidade e controle exato da quantidade.\n\nVale procurar a versão **gelatinizada** — um pré-cozimento que rompe o amido da raiz, **melhora a digestibilidade** e reduz desconforto abdominal, sendo mais bem tolerada por estômagos sensíveis.\n\nSobre o **horário**: prefira a manhã ou o início da tarde, pelo efeito energizante. E, principalmente, **consistência**: os benefícios da maca aparecem com o uso contínuo ao longo de **algumas semanas**, não em doses isoladas. O acompanhamento de um profissional ajuda a ajustar dose e forma ao seu objetivo.\n\n## Efeitos colaterais e contraindicações da maca peruana\n\nEm doses usuais, a maca peruana é **geralmente bem tolerada**. O efeito adverso mais comum é **desconforto gastrointestinal leve** (gases, sensação de inchaço), mais frequente com o pó não-gelatinizado e que costuma melhorar com a versão gelatinizada ou ajuste de dose.\n\nAinda assim, há situações que exigem **cautela e orientação profissional** antes do uso:\n\n- **Distúrbios da tireoide:** a maca contém glucosinolatos (compostos goitrogênicos); o efeito é reduzido pela gelatinização, mas o uso prolongado pede acompanhamento.\n- **Hipertensão não controlada:** há relatos de leve elevação da pressão com doses altas — monitorar.\n- **Câncer hormônio-dependente** (mama, útero, ovário, próstata): embora a maca **não tenha ação estrogênica direta**, recomenda-se usá-la apenas com orientação médica.\n- **Gestação e lactação:** dados limitados — melhor evitar.\n- **Doenças autoimunes** e **hipersensibilidade a crucíferas:** cautela.\n\n**Interações** a observar: anti-hipertensivos (monitorar pressão), medicamentos da tireoide (levotiroxina), terapia hormonal e estimulantes (efeito energizante somado). Na dúvida, a conversa com farmacêutico ou médico é o caminho mais seguro.\n\n## Maca peruana com tribulus terrestris e outras combinações\n\nA combinação mais buscada é **maca peruana com tribulus terrestris** — e ela faz sentido conceitual, porque os dois atuam por caminhos diferentes e complementares. A maca é um **adaptógeno de ação central e não-hormonal** (energia, humor, libido); o [tribulus terrestris](https://medicinalnaweb.com.br/posts/tribulus-terrestris-para-que-serve) é tradicionalmente usado para **vitalidade e desempenho sexual**. Juntos, são populares como suporte à libido e à disposição, embora a evidência da **dupla especificamente** ainda seja limitada — cada ativo é mais estudado isoladamente do que em conjunto.\n\nOutras associações frequentes:\n\n- **Maca + ashwagandha:** ambos adaptógenos; a ashwagandha é mais voltada ao **manejo do estresse e do cortisol**, complementando o lado energético da maca.\n- **Maca + moringa:** combinação de perfil mais **nutricional**, somando vitaminas e minerais.\n\nA vantagem de uma combinação **manipulada** é justamente poder ajustar as doses de cada ativo a um só produto, com orientação profissional — algo que blends industrializados de fórmula fixa não permitem.\n\n## Por que manipular a maca peruana na Medicinal\n\nNem toda maca peruana é igual — e isso é mais do que marketing. Pesquisas brasileiras já identificaram **adulteração de maca em pó com farelo de arroz**, o que reduz (ou zera) o ativo real do produto. Por isso, **procedência e controle de qualidade** são o que separam um suplemento eficaz de um pó sem efeito.\n\nAo manipular a maca peruana na **Medicinal Farmácia de Manipulação**, você tem:\n\n- **Matéria-prima de procedência rastreável**, com controle de qualidade — proteção direta contra adulteração.\n- **Dose customizada** (de 1,5 g a 3 g, ou conforme orientação), ajustada ao seu objetivo, em vez da dose fixa do industrializado.\n- **Cápsulas sob medida**, podendo ser **veganas e livres de lactose e glúten**.\n- Possibilidade de **associação com outros ativos** (como tribulus) numa única fórmula.\n- **Acompanhamento farmacêutico** do início ao fim.\n\n## Maca peruana com qualidade que você confia\n\nA maca peruana é um adaptógeno versátil, com **respaldo real para libido, sintomas da menopausa e fertilidade masculina** — desde que seja de **boa procedência** e usada com consistência. Não é um emagrecedor nem um hormônio: é um suporte natural à energia e à vitalidade, com bom perfil de segurança quando bem orientado.\n\nSe você quer maca peruana com **dose certa, matéria-prima rastreável e acompanhamento farmacêutico**, a manipulação é o caminho mais seguro.\n\n## Aviso importante\n\nEste conteúdo tem caráter **informativo e educativo** e não substitui a avaliação de um médico ou farmacêutico. A maca peruana é um **alimento funcional / suplemento coadjuvante** — não trata, cura nem previne doenças. Os resultados variam conforme o organismo, a dose e a consistência de uso. Antes de iniciar qualquer suplementação, **consulte um profissional habilitado**, especialmente em caso de doenças preexistentes, uso de medicamentos, gestação ou amamentação.",
+          "maxWidth": "medium"
+        },
+        "component": "RichContent"
+      },
+      {
+        "id": "lp-references",
+        "props": {
+          "content": "## Referências Científicas\n\n1. Lee HW et al. (2022). *Maca (Lepidium meyenii Walp.) on semen quality parameters: a systematic review and meta-analysis*. Frontiers in Pharmacology. [PubMed](https://pubmed.ncbi.nlm.nih.gov/36110519/)\n\n2. Lee MS et al. (2011). *Maca (Lepidium meyenii) for treatment of menopausal symptoms: a systematic review*. Maturitas. [PubMed](https://pubmed.ncbi.nlm.nih.gov/21840656/)\n\n3. Shin BC et al. (2010). *Maca (L. meyenii) for improving sexual function: a systematic review*. BMC Complementary and Alternative Medicine. [PubMed](https://pubmed.ncbi.nlm.nih.gov/20691074/)\n\n4. Zenico T et al. (2009). *Subjective effects of Lepidium meyenii (Maca) extract on well-being and sexual performances in patients with mild erectile dysfunction*. Andrologia. [PubMed](https://pubmed.ncbi.nlm.nih.gov/19260845/)\n\n5. Brooks NA et al. (2008). *Beneficial effects of Lepidium meyenii (Maca) on psychological symptoms and measures of sexual dysfunction in postmenopausal women are not related to estrogen or androgen content*. Menopause. [PubMed](https://pubmed.ncbi.nlm.nih.gov/18784609/)\n\n6. Gonzales GF et al. (2002). *Effect of Lepidium meyenii (MACA) on sexual desire and its absent relationship with serum testosterone levels in adult healthy men*. Andrologia. [PubMed](https://pubmed.ncbi.nlm.nih.gov/12472620/)\n\n7. Gonzales GF et al. (2001). *Lepidium meyenii (Maca) improved semen parameters in adult men*. Asian Journal of Andrology. [PubMed](https://pubmed.ncbi.nlm.nih.gov/11753476/)\n\n8. Gonzales GF (2012). *Ethnobiology and Ethnopharmacology of Lepidium meyenii (Maca), a Plant from the Peruvian Highlands*. Evidence-Based Complementary and Alternative Medicine. [PubMed](https://pubmed.ncbi.nlm.nih.gov/21977053/)\n\n",
+          "maxWidth": "medium"
+        },
+        "component": "RichContent"
+      },
+      {
+        "id": "lp-faq",
+        "props": {
+          "items": [
+            {
+              "answer": "Serve principalmente como adaptógeno: apoio à energia, ao humor e à libido. Tem respaldo científico para desejo sexual (homens e mulheres), sintomas da menopausa e fertilidade masculina. Não é emagrecedor nem hormônio.",
+              "question": "Para que serve a maca peruana?"
+            },
+            {
+              "answer": "Depende do objetivo. A amarela é a mais versátil (uso geral, energia); a vermelha tem foco antioxidante e prostático; a preta (negra) é a mais potente para libido masculina e cognição.",
+              "question": "Qual a melhor maca peruana?"
+            },
+            {
+              "answer": "A preta (negra) costuma ser a preferida para o público masculino, por ter o efeito mais pronunciado sobre libido, fertilidade (parâmetros do sêmen) e memória/concentração.",
+              "question": "Qual a melhor maca peruana para o homem?"
+            },
+            {
+              "answer": "A amarela é a mais indicada para uso geral e bem-estar; para sintomas da menopausa, é a variedade com mais estudos favoráveis. A escolha ideal deve considerar seu objetivo com orientação profissional.",
+              "question": "Qual a melhor maca peruana para mulher?"
+            },
+            {
+              "answer": "Use 1 a 3 colheres de chá por dia (cerca de 1,5 g a 3 g), diluídas em sucos, smoothies, iogurte ou mingau. Prefira a versão gelatinizada, mais digestível, e tome de manhã ou no início da tarde.",
+              "question": "Como tomar maca peruana em pó?"
+            },
+            {
+              "answer": "Em cápsulas, siga a dose orientada para atingir 1,5 g a 3 g ao dia (por exemplo, cápsulas de 500 mg somando a dose total). A cápsula oferece dose padronizada e evita o sabor terroso do pó.",
+              "question": "Como tomar maca peruana em cápsula (500mg)?"
+            },
+            {
+              "answer": "De manhã ou no início da tarde, por causa do efeito energizante. Tomar muito perto de dormir pode deixar pessoas sensíveis mais ligadas.",
+              "question": "Qual o melhor horário para tomar maca peruana?"
+            },
+            {
+              "answer": "Geralmente não, porque não é estimulante e não contém cafeína. Quem é mais sensível pode sentir-se agitado se tomar à noite; nesse caso, basta concentrar o uso na parte da manhã.",
+              "question": "Maca peruana tira o sono?"
+            },
+            {
+              "answer": "Não há evidência clínica robusta de que a maca, sozinha, faça perder peso. Ela pode aumentar a disposição para atividades físicas, mas não deve ser usada como emagrecedor.",
+              "question": "Maca peruana emagrece?"
+            },
+            {
+              "answer": "Não. Estudos mostram que a maca melhora a libido sem elevar testosterona, LH, FSH ou estrogênio. O efeito é independente de hormônios, por ação central.",
+              "question": "Maca peruana aumenta a testosterona?"
+            },
+            {
+              "answer": "Não há evidência de que a maca cause ganho de peso por si só. Seu valor calórico em doses de suplementação é baixo.",
+              "question": "Maca peruana engorda?"
+            },
+            {
+              "answer": "Os benefícios aparecem com uso contínuo, geralmente ao longo de algumas semanas. A consistência é mais importante do que a dose isolada.",
+              "question": "Quanto tempo a maca peruana leva para fazer efeito?"
+            },
+            {
+              "answer": "Sim, é uma combinação popular para libido e vitalidade, com ativos de ação complementar. A evidência da dupla específica ainda é limitada; o ideal é ajustar as doses com orientação profissional.",
+              "question": "Maca peruana e tribulus podem ser tomados juntos?"
+            },
+            {
+              "answer": "Em doses usuais é bem tolerada; o efeito mais comum é desconforto gastrointestinal leve. Exige cautela em distúrbios da tireoide, hipertensão não controlada, câncer hormônio-dependente, gestação e amamentação.",
+              "question": "Maca peruana faz mal?"
+            }
+          ],
+          "title": "Perguntas Frequentes"
+        },
+        "component": "FAQ"
+      },
+      {
+        "id": "lp-related",
+        "props": {
+          "content": "## Leitura complementar\n\n- [Maca peruana, afrodisíaco natural](https://medicinalnaweb.com.br/posts/maca-peruana-afrodisiaco-natural)\n- [Maca Peruana: sua origem e benefícios](https://medicinalnaweb.com.br/posts/maca-peruana-sua-origem-e-beneficios)\n- [9 benefícios da maca peruana para a saúde](https://medicinalnaweb.com.br/posts/9-beneficios-da-maca-peruana-para-a-saude-que-voce-nao-sabia)\n- [Tribulus Terrestris: para que serve](https://medicinalnaweb.com.br/posts/tribulus-terrestris-para-que-serve)\n- [Sintomas da menopausa: o que esperar](https://medicinalnaweb.com.br/posts/sintomas-da-menopausa-o-que-esperar-idade-e-duracao)\n",
+          "maxWidth": "medium"
+        },
+        "component": "RichContent"
+      },
+      {
+        "id": "lp-cta",
+        "props": {
+          "title": "Quer manipular Maca Peruana com qualidade?",
+          "variant": "primary",
+          "subtitle": "Fale com nosso time de farmacêuticos para uma fórmula sob medida.",
+          "buttonUrl": "https://wa.me/5544984014719",
+          "buttonText": "Falar com um farmacêutico"
+        },
+        "component": "CTA"
+      }
+    ],
+    "metaTitle": "Maca Peruana: Para Que Serve, Benefícios e Como Tomar | Medicinal",
+    "metaDescription": "Maca peruana: para que serve, benefícios para homens e mulheres, como tomar, variedades e efeitos colaterais. Veja o que dizem os estudos.",
+    "ogTitle": "Maca Peruana: Para Que Serve e Como Tomar",
+    "ogDescription": "Adaptógeno andino para energia, libido, fertilidade e menopausa — com efeito independente de hormônios. Veja como tomar e a maca manipulada.",
+    "ogImageUrl": null
+  },
+  {
+    "id": 24,
+    "slug": "fale-pelo-whats",
+    "title": "Fale pelo whats",
+    "content": null,
+    "sections": [
+      {
+        "id": "tpl-landing-hero-0",
+        "props": {
+          "cta": {
+            "href": "https://api.whatsapp.com/send/?phone=44984014547&text&type=phone_number&app_absent=0",
+            "label": "Pedir orçamento no WhatsApp",
+            "newTab": true
+          },
+          "dark": false,
+          "size": "large",
+          "align": "centro",
+          "title": "Farmácia de Manipulação em Maringá com atendimento de verdade",
+          "ctaUrl": "#contato",
+          "content": "",
+          "ctaText": "Comece agora",
+          "subtitle": "Fórmulas manipuladas sob medida, com acompanhamento de farmacêutico e entrega na sua casa. Peça seu orçamento pelo WhatsApp, sem compromisso.",
+          "alignment": "center",
+          "textColor": "#ebeaea",
+          "buttonColor": "#079c25",
+          "backgroundColor": "#113c01",
+          "backgroundImage": ""
+        },
+        "component": "Hero"
+      },
+      {
+        "id": "049b2873-9db6-42f9-b188-2b0608ead2f6",
+        "props": {
+          "items": [
+            {
+              "icon": "check",
+              "title": "Chame no WhatsApp",
+              "description": "Clique no botão e nos envie sua receita ou nos conte o que precisa."
+            },
+            {
+              "icon": "check",
+              "title": "Receba o orçamento",
+              "description": "Preparamos seu orçamento e tiramos todas as dúvidas com você."
+            },
+            {
+              "icon": "check",
+              "title": "Manipulamos e entregamos",
+              "description": "Sua fórmula é preparada e entregue na sua casa em Maringá.\n"
+            }
+          ],
+          "title": "Como funciona",
+          "columns": "3",
+          "variant": "minimal"
+        },
+        "component": "LpBenefits"
+      },
+      {
+        "id": "bd3dc307-750c-4113-9758-bea02bf033b9",
+        "props": {
+          "text": "Na nossa farmácia de manipulação, cada fórmula é preparada de acordo com a sua prescrição, seguindo rigorosos padrões de qualidade e segurança. Nosso compromisso é oferecer um atendimento humanizado, esclarecer suas dúvidas e garantir que você receba exatamente o que precisa.\n",
+          "style": "light",
+          "title": "Sua Fórmula Manipulada com Qualidade, Segurança e Entrega em Maringá",
+          "imageAlt": "Sua Fórmula Manipulada com Qualidade, Segurança e Entrega em Maringá",
+          "textColor": "#121212",
+          "imagePosition": "",
+          "backgroundColor": "#fafafa"
+        },
+        "component": "ImageText"
+      },
+      {
+        "id": "tpl-landing-features-1",
+        "props": {
+          "items": [
+            {
+              "icon": "",
+              "title": "Atendimento humanizado",
+              "description": "Você fala com gente de verdade. Tiramos suas dúvidas sobre a fórmula, a posologia e o prazo antes de você fechar o pedido.\n"
+            },
+            {
+              "icon": "",
+              "title": "Entrega em Maringá",
+              "description": "Receba sua fórmula manipulada em casa, sem precisar se deslocar. Delivery em Maringá e região."
+            },
+            {
+              "icon": "",
+              "title": "Qualidade e responsabilidade",
+              "description": "Manipulação com controle de qualidade e farmacêutico responsável acompanhando cada etapa."
+            }
+          ],
+          "title": "Nossos Diferenciais",
+          "columns": 3,
+          "features": [
+            {
+              "icon": "zap",
+              "title": "Performance",
+              "description": "Sites rapidos que convertem mais."
+            },
+            {
+              "icon": "palette",
+              "title": "Design Moderno",
+              "description": "Interfaces bonitas e funcionais."
+            },
+            {
+              "icon": "headset",
+              "title": "Suporte Dedicado",
+              "description": "Equipe pronta para te ajudar."
+            }
+          ],
+          "subtitle": "Descubra por que somos a melhor escolha para o seu projeto."
+        },
+        "component": "Features"
+      },
+      {
+        "id": "tpl-landing-cta-4",
+        "props": {
+          "title": "Pronto para pedir sua fórmula?",
+          "variant": "primary",
+          "subtitle": "Entre em contato e receba uma proposta personalizada para o seu negocio.",
+          "buttonUrl": "#contato",
+          "textColor": "#ffffff",
+          "buttonHref": "https://api.whatsapp.com/send/?phone=44984014547&text&type=phone_number&app_absent=0",
+          "buttonText": "Falar no WhatsApp agora",
+          "buttonColor": "#079c25",
+          "description": "Atendimento sem compromisso. Envie sua receita agora pelo WhatsApp.",
+          "backgroundColor": "#0e61ac"
+        },
+        "component": "CTA"
+      },
+      {
+        "id": "18ff8b28-942d-4ad0-a4f2-faf357d1deb1",
+        "props": {
+          "items": [
+            {
+              "answer": "É simples. Envie sua receita pelo WhatsApp e nossa equipe fará a análise, informará o valor da fórmula e esclarecerá todas as suas dúvidas. O orçamento é gratuito e sem compromisso.",
+              "question": "1. Como faço para solicitar um orçamento?"
+            },
+            {
+              "answer": "Depende da fórmula solicitada. Medicamentos que exigem prescrição serão manipulados somente mediante apresentação da receita válida, conforme a legislação vigente.",
+              "question": "2. É necessário apresentar receita médica?"
+            },
+            {
+              "answer": "O prazo pode variar de acordo com a complexidade da manipulação e a disponibilidade dos insumos. Nossa equipe informará o prazo exato no momento do orçamento.",
+              "question": "3. Quanto tempo leva para minha fórmula ficar pronta?"
+            },
+            {
+              "answer": "Sim. Realizamos entregas em Maringá e região para oferecer mais praticidade e comodidade aos nossos clientes. Consulte as condições e áreas atendidas pelo WhatsApp.",
+              "question": "4. Vocês fazem entrega em Maringá?"
+            },
+            {
+              "answer": "Sim. Todas as fórmulas são manipuladas por profissionais qualificados, utilizando matérias-primas selecionadas e seguindo rigorosos processos de controle de qualidade para garantir segurança e eficácia.",
+              "question": "5. As fórmulas manipuladas seguem padrões de qualidade?"
+            },
+            {
+              "answer": "Sim. Nossa equipe conta com farmacêuticos preparados para orientar você sobre sua fórmula manipulada, modo de uso e demais dúvidas relacionadas ao medicamento, sempre dentro das atribuições do profissional.",
+              "question": "6. Posso tirar dúvidas com um farmacêutico?"
+            }
+          ],
+          "title": "Perguntas Frequentes",
+          "fullWidth": true,
+          "productSlug": "/fale-pelo-whats"
+        },
+        "component": "LpFAQ"
+      },
+      {
+        "id": "de547536-eb4b-4df1-b447-c1355cde8006",
+        "props": {
+          "showSocial": true,
+          "showPrivacy": true,
+          "showNewsletter": true
+        },
+        "component": "Footer"
+      }
+    ],
+    "draftSections": null,
+    "metaTitle": "Farmácia de Manipulação em Maringá ",
+    "metaDescription": "Solicite seu orçamento pelo WhatsApp. Fórmulas manipuladas com qualidade, atendimento farmacêutico e entrega em Maringá e região.\n",
+    "ogTitle": "Farmácia de Manipulação em Maringá",
+    "ogDescription": "Fórmulas manipuladas sob medida, atendimento farmacêutico, orçamento rápido pelo WhatsApp e entrega em Maringá e região. Fale com nossa equipe.",
+    "ogImageUrl": null
+  }
+]

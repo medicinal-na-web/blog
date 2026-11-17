@@ -1,15 +1,27 @@
+# Blog Medicinal — produção na VPS
+#
+# Uso:
+#   cp .env.example .env   # preencher os valores
+#   docker compose up -d --build
+#
+# O container escuta na porta 3000 apenas em 127.0.0.1. O proxy reverso da VPS
+# (Caddy, Nginx, Traefik etc.) publica blog.medicinalnaweb.com.br com HTTPS.
 services:
-  postgres:
-    image: postgres:16-alpine
+  blog:
+    build:
+      context: .
+      args:
+        SUPABASE_URL: ${SUPABASE_URL}
+        SUPABASE_ANON_KEY: ${SUPABASE_ANON_KEY}
+        NEXT_PUBLIC_SITE_URL: ${NEXT_PUBLIC_SITE_URL}
+        REVALIDATE_SECRET: ${REVALIDATE_SECRET}
+    image: medicinal-blog:latest
     restart: unless-stopped
+    env_file: .env
     ports:
-      - "5432:5432"
-    environment:
-      POSTGRES_USER: payload
-      POSTGRES_PASSWORD: payload_secret
-      POSTGRES_DB: blog_medicinal
+      - "127.0.0.1:3000:3000"
     volumes:
-      - pgdata:/var/lib/postgresql/data
+      - blog-cache:/app/.next/cache
 
 volumes:
-  pgdata:
+  blog-cache:
